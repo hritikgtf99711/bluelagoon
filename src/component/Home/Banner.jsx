@@ -3,10 +3,10 @@ const Banner = () => {
     return <section
         className="bg-[url('./assets/images/home/banner2.jpg')] bg-cover bg-no-repeat bg-[bottom] relative h-screen w-screen">
         <div className="container relative z-[1] h-[100%]">
-            <h1 class="absolute top-[33%] tracking-[2px] text-[48px] leading-[1.3] uppercase text-center left-[35%] translate-[-50%] font-[600] ">
+            <h1 class="absolute xl:top-[43%] heading-text top-[33%] tracking-[2px] text-[48px] leading-[1.3] uppercase text-center left-[35%] translate-[-50%] font-[600] ">
                 <span className="bg-gradient-to-t from-[#5b90ca]  to-white text-transparent bg-clip-text">Your Home by</span><span className="lg:block"></span> <span className="bg-clip-text bg-gradient-to-t from-[#5b90ca]  to-white text-transparent "> the Ocean</span></h1>
 
-            <ul className="absolute left-0 bottom-[160px]">
+            <ul className="absolute left-0 bottom-[192px]">
                 <li><Link href="#"><img className="w-[20px]" src="./assets/icons/icon_linkedin.svg" alt="" /></Link></li>
                 <li className="my-[35px]"><Link href="#"><img className="w-[20px]" src="./assets/icons/icon_video.svg" alt="" /></Link></li>
                 <li><Link href="#"><img className="w-[20px]" src="./assets/icons/icon_facebook.svg" alt="" /></Link></li>

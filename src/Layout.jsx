@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import { Outlet } from 'react-router';
-
+import Footer from './component/Footer';
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function Layout({ children }) {
@@ -35,12 +35,13 @@ function Layout({ children }) {
 
     return (
         <>
+        <Header />
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <div id="main-content">
-                        <Header />
+                        
                         <Outlet />
-                        {/* <Footer /> */}
+                        <Footer />
                     </div>
                 </div>
             </div>
