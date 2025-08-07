@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router'
-
-export default function Header() {
+import { useOutletContext } from 'react-router-dom';
+export default function Header({openModal}) {
   const [active, setActive] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +37,7 @@ export default function Header() {
               <li><Link className='text-white'  to={'#'}> Contact us </Link></li>
             </ul>
             <button
+            onClick={openModal}
               className='lg:text-[14px] text-[14px] bg-[var(--primary-color)]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-9 lg:py-3'
             >Book a Meeting</button>
           </div>

@@ -18,6 +18,8 @@ body{background-color: var(--secondary-color);}
 .line-gradient{background:linear-gradient(to right, rgba(35, 81, 98, 0.3), rgba(237, 231, 211, 0.5) 50%, rgba(35, 81, 98, 0.2));}
   @media (max-width: 1440px) {
     .heading-text{top: 36%!important;}
+    .content_sec{margin-top: 25px!important;}
+     .content_sec p{font-size: 14px;}
   }
     @media (max-width: 575.98px) {
       .container {
@@ -29,7 +31,7 @@ body{background-color: var(--secondary-color);}
       .container {
         max-width: 500px;
       }
-    }
+    } 
 
     @media (min-width: 768px) {
       .container {

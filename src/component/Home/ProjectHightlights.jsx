@@ -1,7 +1,7 @@
 import Headings from "../../utils/Headings";
-
+import { useOutletContext } from "react-router-dom";
 const ProjectHightlights = () => {
-
+const { openModal, closeModal, isOpen } = useOutletContext();
     return <section className="py-[80px] relative">
         <div className="heading_container text-center mb-[20px]">
             <img src="/assets/icons/icon_design.svg" className="m-auto" alt="icon design" />
@@ -37,7 +37,7 @@ const ProjectHightlights = () => {
                     </li>
                 </ul>
                 <div className="text-center  mt-[80px]">
-                <a href="#" className="uppercase bg-[var(--primary-color)] text-white  py-[14px] px-[44px]">View More</a>
+                <a href="#" className="uppercase bg-[var(--primary-color)] text-white  py-[14px] px-[44px]" onClick={openModal}>View More</a>
                 </div>
             </div>
             <img src="/assets/icons/coconut_blob.png" className="absolute w-[180px] right-[0] bottom-0 right-0" alt="" />

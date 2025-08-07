@@ -1,52 +1,64 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react';
 import Header from './component/Header';
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import ScrollSmoother from "gsap/ScrollSmoother";
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import ScrollSmoother from 'gsap/ScrollSmoother';
 import { Outlet } from 'react-router';
 import Footer from './component/Footer';
+import FormModal from './utils/formModal';
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function Layout({ children }) {
-    const smootherRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const smootherRef = useRef(null);
 
-    useEffect(() => {
-        if (typeof window === 'undefined') return
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
 
-        const wrapper = document.querySelector('#smooth-wrapper')
-        const content = document.querySelector('#smooth-content')
+    const wrapper = document.querySelector('#smooth-wrapper');
+    const content = document.querySelector('#smooth-content');
 
-        if (wrapper && content && !ScrollSmoother.get()) {
-            smootherRef.current = ScrollSmoother.create({
-                wrapper: wrapper,
-                content: content,
-                smooth: 1.5,
-                effects: true,
-            })
-        }
+    if (wrapper && content && !ScrollSmoother.get()) {
+      smootherRef.current = ScrollSmoother.create({
+        wrapper: wrapper,
+        content: content,
+        smooth: 1.5,
+        effects: true,
+      });
+    }
 
-        return () => {
-            if (smootherRef.current) {
-                smootherRef.current.kill()
-                smootherRef.current = null
-            }
-        }
-    }, [])
+    return () => {
+      if (smootherRef.current) {
+        smootherRef.current.kill();
+        smootherRef.current = null;
+      }
+    };
+  }, []);
 
-    return (
-        <>
-        <Header />
-            <div id="smooth-wrapper">
-                <div id="smooth-content">
-                    <div id="main-content">
-                        
-                        <Outlet />
-                        <Footer />
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
+
+  const outletContext = {
+    openModal,
+    closeModal,
+    isOpen,
+  };
+
+  return (
+    <>
+      <Header  openModal={openModal} />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <div id="main-content">
+            <Outlet context={outletContext} />
+            <Footer />
+          </div>
+        </div>
+      </div>
+      <FormModal setIsOpen={setIsOpen} isOpen={isOpen} closeModal={closeModal} />
+    </>
+  );
 }
 
-export default Layout
+export default Layout;

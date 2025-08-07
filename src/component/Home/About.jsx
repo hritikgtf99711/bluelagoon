@@ -2,10 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Headings from '../../utils/Headings';
+import { useOutletContext } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+  const { openModal, closeModal, isOpen } = useOutletContext();
+
   const stickyRef = useRef(null);
   const leftImagesRef = useRef([]);
   const rightImagesRef = useRef([]);
@@ -16,7 +19,7 @@ export default function About() {
       trigger: stickyRef.current,
       pin: true,
       start: `top top+=96px`,
-      end: '+=100%',
+      end: 'bottom bottom',
       pinSpacing: false,
     });
 
@@ -74,7 +77,7 @@ export default function About() {
         y: 0,
         scrollTrigger: {
           trigger: contentRef.current,
-          start: 'top 80%',
+          start: 'top 30%',
           end: 'top 20%',
           scrub: 1,
         },
@@ -127,7 +130,7 @@ export default function About() {
                 </span>
               }
             />
-            <div className="lg:px-24 mt-[60px]">
+            <div className="lg:px-24 content_sec mt-[60px]">
               <p className="font-manrope leading-loose font-light">
                 Welcome to Blue Lagoon by VCL Constructions — a place where the
                 serene beauty of the ocean meets the comforts of modern living.
@@ -145,7 +148,8 @@ export default function About() {
             </div>
             <div className="text-center mt-12">
               <a
-                href="#"
+                href="javascript:void(0)"
+                onClick={openModal}
                 className="uppercase font-[500] bg-[var(--primary-color)] text-white py-3.5 px-11"
               >
                 Enquire Now

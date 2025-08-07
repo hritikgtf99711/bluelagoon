@@ -18,7 +18,7 @@ export default function Form() {
                <textarea name="" id=""  cols='1' rows="1" className='py-[30px]  outline-none  w-[100%] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px]' placeholder='Comments'></textarea>
             </div>
 
-            <input type='button' className='bg-[var(--primary-color)] w-[100%] text-white mt-[40px] py-[15px] ' value={'Submit Now'}/>
+            <input type='button' className='bg-[var(--primary-color)] uppercase w-[100%] text-white mt-[40px] py-[15px] ' value={'Submit Now'}/>
     </form>
     </div>
   )
