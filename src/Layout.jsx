@@ -22,7 +22,7 @@ function Layout({ children }) {
     if (wrapper && content && !ScrollSmoother.get()) {
       smootherRef.current = ScrollSmoother.create({
         wrapper: wrapper,
-        content: content,
+        content: content, 
         smooth: 1.5,
         effects: true,
       });
