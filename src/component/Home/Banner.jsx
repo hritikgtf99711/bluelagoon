@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 const Banner = () => {
     return <section
-        className="bg-[url('./assets/images/home/banner2.jpg')] bg-cover bg-no-repeat bg-[bottom] relative h-screen w-screen">
+        className="bg-[url('/assets/images/home/banner2.jpg')] bg-cover bg-no-repeat bg-[bottom] relative h-screen w-screen">
         <div className="container relative z-[1] h-[100%]">
             <h1 class="absolute xl:top-[43%] heading-text top-[33%] tracking-[2px] text-[48px] leading-[1.3] uppercase text-center left-[35%] translate-[-50%] font-[600] ">
                 <span className="bg-gradient-to-t from-[#5b90ca]  to-white text-transparent bg-clip-text">Your Home by</span><span className="lg:block"></span> <span className="bg-clip-text bg-gradient-to-t from-[#5b90ca]  to-white text-transparent "> the Ocean</span></h1>
