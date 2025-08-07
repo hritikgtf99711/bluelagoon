@@ -18,7 +18,7 @@ body{background-color: var(--secondary-color);}
 .line-gradient{background:linear-gradient(to right, rgba(35, 81, 98, 0.3), rgba(237, 231, 211, 0.5) 50%, rgba(35, 81, 98, 0.2));}
   @media (max-width: 1440px) {
        .heading-text {
-        top: 33% !important;
+        top: 43% !important;
         right: -112px;
     }
     .content_sec{margin-top: 25px!important;}
