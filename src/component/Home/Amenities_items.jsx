@@ -64,7 +64,7 @@ const AmenityItem = () => (
       <div className="amenities-items pt-16">
         {amenitiesData.map((item)=>{
             const {imageOnLeft,title,description,image}=item;
-   return <div className="grid grid-cols-12 gap-20 pb-[80px]">
+   return <div className="grid grid-cols-12 gap-20 pb-[100px]">
     <div className={`col-span-8 ${imageOnLeft ? 'order-1' : 'order-2'}`}>
       <img
         src={image}

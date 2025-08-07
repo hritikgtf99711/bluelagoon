@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 :root{
-  --primary-color:#235162;
-  --secondary-color:#EDE7D3;
+--primary-color:#235162;
+--secondary-color:#EDE7D3;
 }
 *{font-family: "Cinzel", serif;}
 body{background-color: var(--secondary-color);}
@@ -15,53 +15,55 @@ body{background-color: var(--secondary-color);}
 .header__main.active{background:var(--primary-color);position: fixed;padding-block: 18px;}
 .header__main.active .book_btn{background-color: #fff;color:#000;font-weight: 500;}
 .header__main.active img{width: 130px;}
+.content_ref{opacity: 0;}
 .line-gradient{background:linear-gradient(to right, rgba(35, 81, 98, 0.3), rgba(237, 231, 211, 0.5) 50%, rgba(35, 81, 98, 0.2));}
-  @media (max-width: 1440px) {
-       .heading-text {
-        top: 43% !important;
-        right: -112px;
-    }
-    .content_sec{margin-top: 25px!important;}
-     .content_sec p{font-size: 14px;}
-  }
+@media (max-width: 1440px) {
+.heading-text {
+right: -112px;
+}
+.content_sec{margin-top: 25px!important;}
+.content_sec p{font-size: 14px;}
+}
 
-    @media (max-width: 1367px) {
-      h1{font-size: 40px;}
-       .heading-text {
-        top: 33% !important;}
-    }
-    @media (max-width: 575.98px) {
-      .container {
-        max-width: 100%;
-      }
-    }
+@media (max-width: 1367px) {
 
-    @media (min-width: 576px) {
-      .container {
-        max-width: 500px;
-      }
-    } 
+h1{font-size: 30px;}
+.heading-text {
+top: 28% !important;}
+}
 
-    @media (min-width: 768px) {
-      .container {
-        max-width: 700px;
-      }
-    }
+@media (max-width: 575.98px) {
+.container {
+max-width: 100%;
+}
+}
 
-    @media (min-width: 992px) {
-      .container {
-        max-width: 900px; 
-      }
-    }
+@media (min-width: 576px) {
+.container {
+max-width: 500px;
+}
+} 
 
-    @media (min-width: 1200px) {
-      .container {
-        max-width: 1100px; /* Custom width for xl */
-      }
-    }
+@media (min-width: 768px) {
+.container {
+max-width: 700px;
+}
+}
 
-    @media (min-width: 1400px) {
-      .container {
-        max-width: 1300px; /* Custom width for xxl */
-      }
-    }
+@media (min-width: 992px) {
+.container {
+max-width: 900px; 
+}
+}
+
+@media (min-width: 1200px) {
+.container {
+max-width: 1100px; /* Custom width for xl */
+}
+}
+
+@media (min-width: 1400px) {
+.container {
+max-width: 1300px; /* Custom width for xxl */
+}
+}

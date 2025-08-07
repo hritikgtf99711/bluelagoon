@@ -4,11 +4,10 @@ const FormModal = ({isOpen, setIsOpen,closeModal}) => {
 
  
 
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+  return isOpen && ( <div className="min-h-screen bg-gray-100 flex items-center justify-center">
      
 
-      {isOpen && (
+    
         <div className="fixed inset-0 bg-[#1f15156b] bg-opacity-50  z-[9999] flex items-center justify-center z-50">
           <div className="bg-white max-w-md w-full p-6 relative">
             <img
@@ -35,8 +34,9 @@ const FormModal = ({isOpen, setIsOpen,closeModal}) => {
             
           </div>
         </div>
-      )}
+    
     </div>
+    
   );
 };
 

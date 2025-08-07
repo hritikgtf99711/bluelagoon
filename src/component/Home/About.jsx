@@ -41,7 +41,7 @@ export default function About() {
           },
           duration: 1,
           delay: index * 0.2,
-          ease: 'power2.out'
+          ease: 'ease.out'
         }
       );
     });
@@ -64,7 +64,7 @@ export default function About() {
           },
           duration: 1,
           delay: index * 0.2,
-          ease: 'power2.out'
+          ease: 'ease.out'
         }
       );
     });
@@ -77,13 +77,13 @@ export default function About() {
         y: 0,
         scrollTrigger: {
           trigger: contentRef.current,
-          start: 'top 30%',
-          end: 'top 20%',
+          start: 'top top',
+          end: 'top bottom',
           scrub: 1,
         },
         stagger: 0.2,
         duration: 1,
-        ease: 'power2.out'
+        ease: 'ease.out'
       }
     );
 
@@ -113,7 +113,7 @@ export default function About() {
         </div>
 
         <div className="col-span-6 text-center" ref={stickyRef}>
-          <div className="mb-12" ref={contentRef}>
+          <div className="mb-12  " ref={contentRef}>
             <img
               src="/assets/icons/icon_design.svg"
               className="mx-auto"
