@@ -16,7 +16,7 @@ export default function About() {
       trigger: stickyRef.current,
       pin: true,
       start: `top top+=96px`,
-      end: '+=115%',
+      end: '+=100%',
       pinSpacing: false,
     });
 
