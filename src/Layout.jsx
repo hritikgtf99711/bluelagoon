@@ -5,7 +5,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import ScrollSmoother from 'gsap/ScrollSmoother';
 import { Outlet } from 'react-router';
 import Footer from './component/Footer';
-import FormModal from './utils/formModal';
+import FormModal from './utils/FormModal';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
