@@ -21,14 +21,14 @@ export default function Form_sec() {
                   </span>
                 }
               />
-              <ul className="mt-[35px]">
+              <ul className="mt-[35px]"  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
                 <li className="mb-[20px]"><a href="mailto:bluelagoon@vclgroup.in" className="inline-flex font-manrope"><img className="me-[14px]" src="/assets/icons/mail.svg" width={'22'} alt="mail"/><span class="font-manrope">bluelagoon@vclgroup.in</span></a></li>
                 <li><a href="tel:+960 953 2525" className="inline-flex"><img className="me-[10px]" src="/assets/icons/phone.svg" width={'20'} alt="phone"/><span class="font-manrope">+960 953 2525</span></a></li>
               </ul>
             </div>
            
           </div>
-           <div className="col-span-4">
+           <div className="col-span-4"  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6">
                     <Form/>
             </div>
         </div>

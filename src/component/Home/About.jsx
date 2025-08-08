@@ -130,8 +130,8 @@ export default function About() {
                 </span>
               }
             />
-            <div className="lg:px-24 content_sec mt-[60px]">
-              <p className="font-manrope leading-loose font-light">
+            <div className="xl:px-24 content_sec mt-[60px]">
+              <p   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="font-manrope leading-loose font-light">
                 Welcome to Blue Lagoon by VCL Constructions — a place where the
                 serene beauty of the ocean meets the comforts of modern living.
                 Inspired by the endless horizon and the purity of nature, Blue
@@ -139,14 +139,14 @@ export default function About() {
                 dynamic commercial spaces, each curated to bring you closer to the
                 peaceful essence of the sea.
               </p>
-              <p className="font-manrope leading-loose font-light mt-6">
+              <p   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="font-manrope leading-loose font-light mt-6">
                 Every residence at Blue Lagoon provides an uninterrupted view of the
                 ocean, allowing you to immerse yourself in tranquility and natural
                 beauty with every glance. The design integrates nature seamlessly,
                 with open spaces that promote a sense of freedom and serenity.
               </p>
             </div>
-            <div className="text-center mt-12">
+            <div className="text-center mt-12"   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
               <a
                 href="javascript:void(0)"
                 onClick={openModal}

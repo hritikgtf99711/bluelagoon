@@ -28,8 +28,12 @@ right: -112px;
 @media (max-width: 1367px) {
 
 h1{font-size: 30px;}
+h3{font-size: 25px;}
+
+h2{font-size: 28px;}
 .heading-text {
 top: 28% !important;}
+.content_sec{padding: 0;}
 }
 
 @media (max-width: 575.98px) {

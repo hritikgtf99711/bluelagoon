@@ -70,6 +70,7 @@ const AmenityItem = () => (
         src={image}
         className="w-full rounded-lg"
         alt={`${title} amenity`}
+        data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"
         width="800"
         height="600"
       />
@@ -77,6 +78,7 @@ const AmenityItem = () => (
     <div className={`col-span-4 mt-[auto] pb-[30px] ${imageOnLeft ? 'order-2' : 'order-1'}`}>
       <div className="pb-10">
         <img
+        data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6"
           src="/assets/icons/icon_design.svg"
           className="mb-4"
           alt="Design Icon"
@@ -84,7 +86,7 @@ const AmenityItem = () => (
           height="40"
         />
         <Headings classNames="text-start !text-3xl " headings={title} />
-        <p className="font-manrope text-justify text-sm mt-[15px] leading-relaxed">
+        <p className="font-manrope text-justify text-sm mt-[15px] leading-relaxed" data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
           {description}
         </p>
       </div>

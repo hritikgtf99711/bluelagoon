@@ -2,21 +2,22 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--primary-color)] text-white text-center pt-[80px]">
-        <div className="container">
-      <div className="inline-block ">
+    <footer className="bg-[var(--primary-color)] text-white text-center pt-[80px]" >  
+        <div className="container" >
+      <div className="inline-block " >
         <div className="relative">
           <div className="h-[1px] w-[120px] absolute  left-[180px] top-[30px]  bg-gradient-to-r to-gray-200 from-teal-70"></div>
           <img
             src="/assets/icons/logo-white.svg"
             className="m-[auto]"
+            
             alt="icon"
           />
           <div className="h-[1px] w-[120px] absolute  bg-gradient-to-r right-[180px]  top-[30px]    from-gray-200 to-teal-70"></div>
         </div>
         <div className="inline-block mt-[45px]">
           <div className="h-[1px] w-[100%] line-gradient"></div>
-          <ul className="flex justify-center my-[20px]">
+          <ul className="flex justify-center my-[20px]"  data-gsap="fade-up" >
             <li>
               <a href="" className="text-white uppercase font-[500] me-[65px]">
                 Home
@@ -40,7 +41,7 @@ export default function Footer() {
           </ul>
           <div className="h-[1px] w-[100%] line-gradient"></div>
         </div>
-        <ul className="my-[45px]">
+        <ul className="my-[45px]"  >
             <li className="text-[16px] mb-[16px] tracking-[1px]">
                 <span>Head Office:</span> <span className="font-manrope text-[14px]">Plot no. 65, Sector-18 Gurugram, Haryana - 122001, India</span>
             </li>

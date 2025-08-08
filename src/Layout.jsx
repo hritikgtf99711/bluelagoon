@@ -6,12 +6,22 @@ import ScrollSmoother from 'gsap/ScrollSmoother';
 import { Outlet } from 'react-router';
 import Footer from './component/Footer';
 import FormModal from './utils/FormModal';
+import { setupGsapAnimations } from './utils/SetupGsapAnimation';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const smootherRef = useRef(null);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    // Setup animations for elements within this component
+    const cleanup = setupGsapAnimations(containerRef.current);
+
+    // Cleanup on unmount
+    return cleanup;
+  }, []);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -50,7 +60,8 @@ function Layout({ children }) {
       <Header  openModal={openModal} />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <div id="main-content">
+          <div id="main-content" ref={containerRef}>
+            
             <Outlet context={outletContext} />
             <Footer />
           </div>

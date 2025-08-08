@@ -14,7 +14,7 @@ export default function Amenities() {
   let count = 0;
 
   return (
-    <section className="py-[80px]">
+    <section className="py-[80px]" >
       <div className="text-center mb-5">
         <img
           src="/assets/icons/icon_design.svg"
@@ -22,6 +22,7 @@ export default function Amenities() {
           alt="Design Icon"
           width="50"
           height="50"
+          data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6"
         />
         <Headings headings="ROOFTOP AMENITIES" />
       </div>
@@ -29,9 +30,10 @@ export default function Amenities() {
         <img
           src="/assets/images/home/amenities/map.png"
           className="w-[100%] my-[50px]"
+          data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"
           alt="Rooftop Amenities Map"
         />
-        <div className="grid grid-cols-6 gap-[10px]">
+        <div className="grid grid-cols-6 gap-[10px]" data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">  
           {amenitiesData.map((column, index) => (
             <div key={`col-span-${index}`} className="col">
               <ol className="ps-4">
