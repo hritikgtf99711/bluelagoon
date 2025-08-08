@@ -1,6 +1,7 @@
 import React from 'react';
 import Headings from '../../utils/Headings';
 import Amenities_items from './Amenities_items';
+import ArtisticImpression from '../../utils/ArtisticImpression';
 const amenitiesData = [
   ['Pathway', 'Mound', 'Covered Seating'],
   ['Gazebo', 'Sculpture', 'Informal Seating Area'],

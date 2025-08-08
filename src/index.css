@@ -43,6 +43,7 @@ img {
   transform: translateZ(0);
 }
 .line-gradient{background:linear-gradient(to right, rgba(35, 81, 98, 0.3), rgba(237, 231, 211, 0.5) 50%, rgba(35, 81, 98, 0.2));}
+.artistic_impression{background: linear-gradient(1deg, #00000099, transparent);width: 100%;}
 @media (max-width: 1440px) {
 .heading-text {
 right: -112px;

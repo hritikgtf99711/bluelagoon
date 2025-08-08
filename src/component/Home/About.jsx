@@ -5,7 +5,7 @@ import Headings from '../../utils/Headings';
 import { useOutletContext } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
-
+import ArtisticImpression from '../../utils/ArtisticImpression';
 export default function About() {
   const { openModal, closeModal, isOpen } = useOutletContext();
 
@@ -102,18 +102,25 @@ export default function About() {
     <section className="py-20 min-h-screen lg:px-0 px-[15px]">
       <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
         <div className="col-span lg:col-span-3 flex flex-col gap-4">
+          <div className='relative'>
+            
            <img
             src="/assets/images/home/about/about_1.jpg"
             className="mx-auto h-[400px]  lg:rounded-br-[10px] rounded-[10px] lg:rounded-tr-[10px]  w-[100%] object-cover lg:mt-[400px] max-w-full"
             alt="About_1 design"
             ref={(el) => (rightImagesRef.current[0] = el)}
           />
+          <ArtisticImpression/>
+          </div>
+          <div className='relative'>
           <img
             src="/assets/images/home/about/about_3.jpg"
             className="mx-auto h-[400px] w-[100%]  lg:rounded-br-[10px] rounded-[10px] lg:rounded-tr-[10px] object-cover lg:mt-[450px] max-w-full"
             alt="About_1 design"
             ref={(el) => (rightImagesRef.current[1] = el)}
           />
+          <ArtisticImpression/>
+          </div>
         </div>
 
         <div className="col-span-6 lg:my-0 my-[20px] text-center" ref={stickyRef}>
@@ -163,19 +170,24 @@ export default function About() {
         </div>
 
         <div className="col-span lg:col-span-3  flex flex-col gap-4">
-         
+         <div className='relative'>
           <img
             src="/assets/images/home/about/about_2.jpg"
             className="mx-auto h-[400px] w-[100%] lg:rounded-bl-[10px] rounded-[10px] lg:rounded-tl-[10px] object-cover max-w-full"
             alt="About_2 design"
             ref={(el) => (leftImagesRef.current[0] = el)}
           />
+          <ArtisticImpression/>
+          </div>
+              <div className='relative'>
           <img
             src="/assets/images/home/about/about_4.jpg"
             className="mx-auto h-[400px] object-cover lg:rounded-bl-[10px] rounded-[10px]  lg:rounded-tl-[10px] w-[100%] max-w-full lg:mt-[300px]"
             alt="About_2 design"
             ref={(el) => (leftImagesRef.current[1] = el)}
           />
+           <ArtisticImpression/>
+          </div>
         </div>
       </div>
     </section>

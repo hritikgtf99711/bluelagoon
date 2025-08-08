@@ -1,3 +1,4 @@
+import ArtisticImpression from "../../utils/ArtisticImpression";
 const PoolSec=()=>{
     return <section className="bg-[url('/assets/images/home/poolbanner.jpg')]  bg-[cover] h-[auto] lg:h-[85vh] relative">
                    <div className="content lg:px-0  px-[15px] lg:absolute top-[120px] lg:bg-[transparent] bg-[#00000073] lg:py-[0] py-[80px] left-[50%] w-[100%] text-center lg:left-[30%] lg:translate-x-[-50%] z-[1]">
@@ -9,6 +10,7 @@ const PoolSec=()=>{
                 Rooftop Garden
             </h3>
             </div>
+            <ArtisticImpression/>
     </section>
 }
 export default PoolSec;

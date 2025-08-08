@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import ZoomOut from "../../utils/ZoomOut"
+import ArtisticImpression from "../../utils/ArtisticImpression"
 const Banner = () => {
     return <section
     
@@ -14,7 +15,9 @@ const Banner = () => {
                 <li><Link href="#"><img className="w-[20px]" src="./assets/icons/icon_facebook.svg" alt="" /></Link></li>
             </ul>
         </div>
-        <div className="bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.30)_100%)] h-[200px] w-[100%] absolute bottom-0 right-0"></div></section>
+        <div className="bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.30)_100%)] h-[200px] w-[100%] absolute bottom-0 right-0"></div>
+        <ArtisticImpression/>
+        </section>
 }
 
 export default Banner

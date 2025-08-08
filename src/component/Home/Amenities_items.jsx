@@ -1,6 +1,6 @@
 import React from 'react';
 import Headings from '../../utils/Headings';
-
+import ArtisticImpression from '../../utils/ArtisticImpression';
 const amenitiesData = [
   {
     image: '/assets/images/home/amenities/amenities_1.jpg',
@@ -66,6 +66,7 @@ const AmenityItem = () => (
             const {imageOnLeft,title,description,image}=item;
    return <div className="grid grid-cols-1 gap-[10px] lg:grid-cols-12 lg:gap-[100px] gap-[20px] pb-[25px] lg:pb-[100px]">
     <div className={`col-span-7 ${imageOnLeft ? 'order-1' : 'order-2'}`}>
+      <div className='relative'>
       <img
         src={image}
         className="w-full rounded-lg"
@@ -74,6 +75,8 @@ const AmenityItem = () => (
         width="800"
         height="600"
       />
+      <ArtisticImpression/>
+      </div>
     </div>
     <div className={`col-span-5 mt-[auto] pb-[30px] ${imageOnLeft ? 'order-2' : 'order-1'}`}>
       <div className="lg:pb-10">
