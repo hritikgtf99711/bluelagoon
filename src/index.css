@@ -84,7 +84,7 @@ max-width: 100%;
 }
 
 @media (max-height: 730px) {
-.banner_sec {background-position-y:-196px}
+/* .banner_sec {background-position-y:-196px} */
 .content_sec p{font-size: 13px;}
 }
 @media (min-width: 576px) {
