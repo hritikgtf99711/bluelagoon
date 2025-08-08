@@ -88,7 +88,7 @@ const AmenityItem = () => (
           width="40"
           height="40"
         />
-        <Headings classNames="text-start lg:!text-3xl !px-0" headings={title} />
+        <Headings classNames="text-start lg:text-3xl !text-[20px] !px-0" headings={title} />
         <p className="font-manrope text-justify text-sm mt-[15px] leading-relaxed" data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
           {description}
         </p>

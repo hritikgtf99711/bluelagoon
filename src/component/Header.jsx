@@ -37,7 +37,7 @@ setopenSideMenu(false)
     },[nav.pathname])
   return (
     <>
-      <header className={`header__main  py-[30px] w-full absolute z-[999] top-0 ${active?'active':''}`}>
+      <header className={`header__main  py-[15px] lg:py-[30px] w-full absolute z-[999] top-0 ${active?'active':''}`}>
         <div className='container'>
           <div className='flex_div flex justify-between items-center'>
             <Link to={'/'}
@@ -47,7 +47,7 @@ setopenSideMenu(false)
                 src={"/assets/images/logo.svg"}
                 alt='logo'
                 width={'180'}
-                className='2xl:w-[180px] logo w-[150px] '
+                className='2xl:w-[180px] logo w-[130px] '
               />
             </Link>
             <ul className={`menu__list flex gap-[30px] uppercase ml-[auto] me-[30px] tracking-[2px]`}>

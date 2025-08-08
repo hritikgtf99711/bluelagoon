@@ -18,7 +18,7 @@ export default function Essential_Features() {
                         <img src='/assets/images/home/essential/essential_1.jpg' data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6" className='w-[100%]' alt='essential 1'/>
                         <ArtisticImpression/>
                         </div>
-                        <h3 className='text-[var(--secondary-color)] text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Elevators</h3>
+                        <h3 className='text-[var(--secondary-color)] text-[20apx] lg:text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Elevators</h3>
                     </div>
                 </div>
                  <div className='col-span-4 lg:mt-[-85px]' >
@@ -27,7 +27,7 @@ export default function Essential_Features() {
                         <img src='/assets/images/home/essential/essential_2.jpg' className='w-[100%]'  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6" alt='essential 1'/>
                          <ArtisticImpression/>
                         </div>
-                        <h3 className='text-[var(--secondary-color)] text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Smart Home <span className='lg:block'></span> Technology</h3>
+                        <h3 className='text-[var(--secondary-color)] text-[20apx] lg:text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Smart Home <span className='lg:block'></span> Technology</h3>
                     </div>
                 </div>
                  <div className='col-span-4'>
@@ -36,7 +36,7 @@ export default function Essential_Features() {
                         <img src='/assets/images/home/essential/essential_3.jpg' className='w-[100%] '  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"  alt='essential 1' />
                          <ArtisticImpression/>
                         </div>
-                        <h3 className='text-[var(--secondary-color)] text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Security</h3>
+                        <h3 className='text-[var(--secondary-color)] text-[20apx] lg:text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Security</h3>
                     </div>
                 </div>
             </div>

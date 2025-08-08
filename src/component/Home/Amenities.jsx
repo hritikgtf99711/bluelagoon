@@ -30,7 +30,7 @@ export default function Amenities() {
       <div className="container mx-auto">
         <img
           src="/assets/images/home/amenities/map.png"
-          className="w-[100%] my-[50px]"
+          className="w-[100%] my-[30px] lg:my-[50px]"
           data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"
           alt="Rooftop Amenities Map"
         />
