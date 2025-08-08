@@ -10,5 +10,5 @@ export default function Banner() {
         </div>
         <ArtisticImpression/>
     </section>
-  )
+  ) 
 }
