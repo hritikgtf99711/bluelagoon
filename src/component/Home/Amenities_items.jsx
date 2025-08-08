@@ -64,8 +64,8 @@ const AmenityItem = () => (
       <div className="amenities-items pt-16">
         {amenitiesData.map((item)=>{
             const {imageOnLeft,title,description,image}=item;
-   return <div className="grid grid-cols-12 gap-20 pb-[100px]">
-    <div className={`col-span-8 ${imageOnLeft ? 'order-1' : 'order-2'}`}>
+   return <div className="grid grid-cols-12 gap-[100px] pb-[100px]">
+    <div className={`col-span-7 ${imageOnLeft ? 'order-1' : 'order-2'}`}>
       <img
         src={image}
         className="w-full rounded-lg"
@@ -75,7 +75,7 @@ const AmenityItem = () => (
         height="600"
       />
     </div>
-    <div className={`col-span-4 mt-[auto] pb-[30px] ${imageOnLeft ? 'order-2' : 'order-1'}`}>
+    <div className={`col-span-5 mt-[auto] pb-[30px] ${imageOnLeft ? 'order-2' : 'order-1'}`}>
       <div className="pb-10">
         <img
         data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6"

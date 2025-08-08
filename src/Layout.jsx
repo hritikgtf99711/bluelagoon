@@ -33,8 +33,9 @@ function Layout({ children }) {
       smootherRef.current = ScrollSmoother.create({
         wrapper: wrapper,
         content: content, 
-        smooth: 1.5,
-        effects: true,
+        smooth: 1,
+      effects: false, // Disable effects
+  normalizeScroll: true,
       });
     }
 

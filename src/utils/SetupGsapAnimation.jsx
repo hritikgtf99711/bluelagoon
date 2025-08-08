@@ -12,7 +12,7 @@ export const setupGsapAnimations = (container = document) => {
     const animationType = element.dataset.gsap || 'fade';
     const delay = parseFloat(element.dataset.gsapDelay) || 0;
     const duration = parseFloat(element.dataset.gsapDuration) || 1;
-    const start = element.dataset.gsapStart || 'bottom bottom'; // Trigger at bottom of viewport
+    const start = '200 bottom'; // Trigger at bottom of viewport
     const ease = element.dataset.gsapEase || 'ease.out';
 
     // Define animation properties

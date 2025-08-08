@@ -8,6 +8,7 @@
 *{font-family: "Cinzel", serif;}
 body{background-color: var(--secondary-color);}
 .container{margin: auto;}
+p{letter-spacing: 0.5px;font-size: 14px;}
 .shadow-custom{box-shadow: 4px 4px 20px 0 rgba(35, 81, 98, 0.63);}
 .font-manrope{  font-family: "Manrope", sans-serif;}
 .header__main{transition: 0.6s all;}
@@ -16,11 +17,37 @@ body{background-color: var(--secondary-color);}
 .header__main.active .book_btn{background-color: #fff;color:#000;font-weight: 500;}
 .header__main.active img{width: 130px;}
 .content_ref{opacity: 0;}
+.content_sec,
+.content_sec * {
+  will-change: transform, opacity;
+  transform: translateZ(0); /* Force hardware acceleration */
+}
+
+#smooth-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+img {
+  will-change: clip-path, opacity;
+  transform: translateZ(0);
+}
 .line-gradient{background:linear-gradient(to right, rgba(35, 81, 98, 0.3), rgba(237, 231, 211, 0.5) 50%, rgba(35, 81, 98, 0.2));}
 @media (max-width: 1440px) {
 .heading-text {
 right: -112px;
 }
+.banner_sec{background-position-y:-155px ;}
 .content_sec{margin-top: 25px!important;}
 .content_sec p{font-size: 14px;}
 }
@@ -28,7 +55,7 @@ right: -112px;
 @media (max-width: 1367px) {
 
 h1{font-size: 30px;}
-h3{font-size: 25px;}
+/* h3{font-size: 25px;} */
 
 h2{font-size: 28px;}
 .heading-text {

@@ -33,12 +33,12 @@ export default function Header({openModal}) {
             <ul className={`menu__list flex gap-[30px] uppercase ml-[auto] me-[30px] tracking-[2px]`}>
               {/* <li><Link className='text-white'  to={'#'}>Home </Link></li>
               <li><Link className='text-white'  to={'#'}>Projects </Link></li> */}
-              <li><Link className='text-white'  to={'/about'}>About Us </Link></li>
-              <li><Link className='text-white'  onClick={openModal} to={'#'}> Contact us </Link></li>
+              <li><Link className='text-white text-[14px]'  to={'/about'}>About Us </Link></li>
+              <li><Link className='text-white text-[14px]'  onClick={openModal} to={'#'}> Contact us </Link></li>
             </ul>
             <button
             onClick={openModal}
-              className='lg:text-[14px] text-[14px] bg-[var(--primary-color)]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-9 lg:py-3'
+              className='lg:text-[14px] text-[14px] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3'
             >Book a Meeting</button>
           </div>
         </div>

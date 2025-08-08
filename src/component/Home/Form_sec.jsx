@@ -6,7 +6,7 @@ export default function Form_sec() {
     <section className="py-[80px]">
       <div className="container">
         <div className="grid grid-cols-12">
-          <div className="col-span-8 m-auto">
+          <div className="col-span-7 m-auto">
             <div className="heading_container text-center mb-[20px]">
               <img
                 src="/assets/icons/icon_design.svg"
