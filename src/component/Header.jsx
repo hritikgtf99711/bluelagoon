@@ -41,7 +41,7 @@ setopenSideMenu(false)
         <div className='container'>
           <div className='flex_div flex justify-between items-center'>
             <Link to={'/'}
-              className='header__logo'
+            className='header__logo'
             >
               <img
                 src={"/assets/images/logo.svg"}

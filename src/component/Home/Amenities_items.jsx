@@ -65,7 +65,7 @@ const AmenityItem = () => (
         {amenitiesData.map((item)=>{
             const {imageOnLeft,title,description,image}=item;
    return <div className="grid grid-cols-1 gap-[10px] lg:grid-cols-12 lg:gap-[100px] gap-[20px] pb-[25px] lg:pb-[100px]">
-    <div className={`col-span-7 ${imageOnLeft ? 'order-1' : 'order-2'}`}>
+    <div className={`col-span lg:col-span-7 ${imageOnLeft ? 'order-1' : 'order-2'}`}>
       <div className='relative'>
       <img
         src={image}
@@ -78,7 +78,7 @@ const AmenityItem = () => (
       <ArtisticImpression/>
       </div>
     </div>
-    <div className={`col-span-5 mt-[auto] pb-[30px] ${imageOnLeft ? 'order-2' : 'order-1'}`}>
+    <div className={`col-span lg:col-span-5 mt-[auto] pb-[30px] ${imageOnLeft ? 'order-2' : 'order-1'}`}>
       <div className="lg:pb-10">
         <img
         data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6"
@@ -88,7 +88,7 @@ const AmenityItem = () => (
           width="40"
           height="40"
         />
-        <Headings classNames="text-start lg:text-3xl !text-[20px] !px-0" headings={title} />
+        <Headings classNames="text-start lg:!text-[24px] !text-[20px] !px-0" headings={title} />
         <p className="font-manrope text-justify text-sm mt-[15px] leading-relaxed" data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
           {description}
         </p>

@@ -3,7 +3,7 @@ import Headings from "../utils/Headings";
 import { NavLink } from "react-router-dom";
 export default function Thankyou() {
   return (
-    <section className="py-[300px]">
+    <section className="pt-[200px] py-[100px]">
       <div className="container">
         <Headings classNames="!text-[35px]" headings={"Thank You"} />
         <div className="text-center">
