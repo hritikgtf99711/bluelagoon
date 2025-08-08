@@ -39,7 +39,7 @@ export default function Form() {
 
   return (
     <div className='relative overflow-hidden'>
-      <div className='relative px-[50px] py-[40px] border-[4px] border-[var(--primary-color)]'>
+      <div className='relative px-[30px] py-[40px] border-[4px] border-[var(--primary-color)]'>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute top-[-14px] right-[-20px] border-l-[4px] border-b-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute top-[-14px] left-[-20px] border-r-[4px] border-b-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute bottom-[-14px] left-[-20px] border-t-[4px] border-r-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>

@@ -6,11 +6,10 @@ export default function Header({openModal}) {
   const [active, setActive] = useState(false);
   const [openSideMenus,setopenSideMenu]=useState(false);
   const nav=useLocation();
-  // console.log(nav)
 
   useEffect(() => {
     const handleScroll = () => {
-       if(nav.pathname=="/"){
+       if(nav.pathname=="/" || nav.pathname=="/about"){
       if (window.scrollY > 100) {
         setActive(true);
       } else {
@@ -18,7 +17,8 @@ export default function Header({openModal}) {
       }
     }
     };
-    if(nav.pathname=="/"){
+   
+    if(nav.pathname=="/" || nav.pathname=="/about"){
       setActive(false);
     }else{
       setActive(true);
@@ -32,6 +32,9 @@ export default function Header({openModal}) {
     setopenSideMenu(true)
 
   }
+   useEffect(()=>{
+setopenSideMenu(false)
+    },[nav.pathname])
   return (
     <>
       <header className={`header__main  py-[30px] w-full absolute z-[999] top-0 ${active?'active':''}`}>

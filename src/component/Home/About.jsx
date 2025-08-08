@@ -109,7 +109,7 @@ export default function About() {
             ref={(el) => (rightImagesRef.current[0] = el)}
           />
           <img
-            src="/assets/images/home/about/about_1.jpg"
+            src="/assets/images/home/about/about_3.jpg"
             className="mx-auto h-[400px] w-[100%]  lg:rounded-br-[10px] rounded-[10px] lg:rounded-tr-[10px] object-cover lg:mt-[450px] max-w-full"
             alt="About_1 design"
             ref={(el) => (rightImagesRef.current[1] = el)}
@@ -171,7 +171,7 @@ export default function About() {
             ref={(el) => (leftImagesRef.current[0] = el)}
           />
           <img
-            src="/assets/images/home/about/about_2.jpg"
+            src="/assets/images/home/about/about_4.jpg"
             className="mx-auto h-[400px] object-cover lg:rounded-bl-[10px] rounded-[10px]  lg:rounded-tl-[10px] w-[100%] max-w-full lg:mt-[300px]"
             alt="About_2 design"
             ref={(el) => (leftImagesRef.current[1] = el)}

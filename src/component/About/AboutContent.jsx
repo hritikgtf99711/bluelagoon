@@ -73,7 +73,7 @@ export default function AboutContent() {
       <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Finishing Schedule</button>
       </div>
    <div   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-      <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Finishing Schedule</button>
+    <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Application form</button>
       </div>
       </div>
         </div>
