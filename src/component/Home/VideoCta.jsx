@@ -9,7 +9,7 @@
                     </video>
                 <div className=' mx-[auto]  bg-[linear-gradient(0deg,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.6)_100%)] py-[120px] h-[100%] w-[100%] text-white relative text-center '>
                         <div className='m-[auto]'>
-                        <h2 className='text-[80px] font-[600]'>Get In Touch</h2>
+                        <h2 className='text-[65px] font-[600]'>Get In Touch</h2>
                         <p className='font-manrope my-[25px] capitalize tracking-[1px] mb-[40px] leading-[1.8]'>Your perfect beachside escape is just a message away <span className='lg:block'></span>
                             – our dedicated team is standing by to craft your <span className='lg:block'></span>
                             personalized coastal experience.</p>

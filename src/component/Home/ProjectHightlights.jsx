@@ -2,7 +2,7 @@ import Headings from "../../utils/Headings";
 import { useOutletContext } from "react-router-dom";
 const ProjectHightlights = () => {
 const { openModal, closeModal, isOpen } = useOutletContext();
-    return <section className="py-[80px] relative">
+    return <section className="pt-[80px] relative">
         <div className="heading_container text-center mb-[20px]">
             <img src="/assets/icons/icon_design.svg" className="m-auto" alt="icon design" />
             <span className="uppercase text-[var(--primary-color)] mb-[15px] mt-[30px] font-[500] block">Project Hightlights</span>
@@ -10,9 +10,9 @@ const { openModal, closeModal, isOpen } = useOutletContext();
         </div>
         <div className="grid grid-cols-12 mt-[15px] relative">
             <div className="col-span-7">
-                <img src="/assets/images/home/project_highlights.png" className="w-[100%]" alt="" />
+                <img src="/assets/images/home/project_highlights.png" className="w-[100%] h-[100%] object-cover" alt="" />
             </div>
-            <div className="col-span-4 m-auto">
+            <div className="col-span-4 m-auto pb-[80px]">
                 <ul className="overflow-y-scroll max-h-[400px] [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                     <li className="uppercase flex place-items-center mb-[35px]">
                         <img src="/assets/icons/icon_building.svg" alt="Building"/>
