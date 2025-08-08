@@ -123,7 +123,7 @@ export default function About() {
               className="mx-auto"
               alt="icon design"
             />
-            <span className="uppercase text-[var(--primary-color)] opacity-0 mb-4 mt-8 font-medium block">
+            <span className="uppercase text-[var(--primary-color)] lg:opacity-0 mb-4 mt-8 font-medium block">
               Welcome to Blue Lagoon
             </span>
             <Headings
@@ -134,7 +134,7 @@ export default function About() {
                 </span>
               }
             />
-            <div className="lg:px-24 content_sec opacity-0 mt-[60px]">
+            <div className="lg:px-24 content_sec lg:opacity-0 mt-[60px]">
               <p   data-gsap="fade-up"  className="font-manrope leading-loose font-light">
                 Welcome to Blue Lagoon by VCL Constructions — a place where the
                 serene beauty of the ocean meets the comforts of modern living.

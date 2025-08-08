@@ -16,10 +16,7 @@ function Layout({ children }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    // Setup animations for elements within this component
     const cleanup = setupGsapAnimations(containerRef.current);
-
-    // Cleanup on unmount
     return cleanup;
   }, []);
 

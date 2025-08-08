@@ -25,8 +25,8 @@ export default function Essential_Features() {
                 </div>
                  <div className='col-span-4'>
                     <div className='cars_item'>
-                        <img src='/assets/images/home/essential/essential_3.jpg' className='w-[100%] '  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6" className='w-[100%]' alt='essential 1'  alt='essential 1'/>
-                        <h3 className='text-[var(--secondary-color)] text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Elevators</h3>
+                        <img src='/assets/images/home/essential/essential_3.jpg' className='w-[100%] '  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"  alt='essential 1' />
+                        <h3 className='text-[var(--secondary-color)] text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Security</h3>
                     </div>
                 </div>
             </div>

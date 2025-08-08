@@ -1,25 +1,145 @@
-import React from 'react'
-
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 export default function Form() {
-  return (
-    <div className='relative px-[50px] py-[40px]'>
-        <img src='/assets/icons/form-frame.svg' alt='form-frame' className='absolute h-[100%] w-[100%] top-0 left-0'/>
-    <form className='relative'>
-            <div className=''>
-                <input className='py-[15px] w-[100%] placeholder:font-[500] outline-none border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px]' type='text' placeholder='Name'/>
-            </div>
-             <div className=''>
-                <input className='py-[15px] w-[100%] placeholder:font-[500] outline-none mt-[15px] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[15px]' type='email' placeholder='Email'/>
-            </div>
-             <div className=''>
-                <input className='py-[15px] w-[100%] placeholder:font-[500] outline-none mt-[15px] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px]' type='phone' placeholder='Contact No.'/>
-            </div>
-             <div className=''>
-               <textarea name="" id=""  cols='1' rows="1" className='py-[30px]  outline-none  w-[100%] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px]' placeholder='Comments'></textarea>
-            </div>
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate=useNavigate();
 
-            <input type='button' className='bg-[var(--primary-color)] uppercase w-[100%] text-white mt-[40px] py-[15px] ' value={'Submit Now'}/>
-    </form>
+  const onInfo = async (data) => {
+    const { name, email, phone, comments } = data;
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://bluelagoon.mv/sendMail.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+          rejectUnauthorized: false, // risky
+        body: JSON.stringify({ name, email, phone, comments })
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      navigate("/thankyouy")
+      // alert('Email sent successfully!');
+      reset(); // Clear form after successful submission
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Failed to send email. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <div className='relative overflow-hidden'>
+      <div className='relative px-[50px] py-[40px] border-[4px] border-[var(--primary-color)]'>
+        <div className='h-[35px] w-[35px] rounded-[50%] absolute top-[-14px] right-[-20px] border-l-[4px] border-b-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
+        <div className='h-[35px] w-[35px] rounded-[50%] absolute top-[-14px] left-[-20px] border-r-[4px] border-b-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
+        <div className='h-[35px] w-[35px] rounded-[50%] absolute bottom-[-14px] left-[-20px] border-t-[4px] border-r-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
+        <div className='h-[35px] w-[35px] rounded-[50%] absolute border-l-[4px] border-t-[4px] bottom-[-14px] right-[-20px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
+        
+        <form onSubmit={handleSubmit(onInfo)}>
+          <div>
+            <input
+              className='py-[15px] w-[100%] placeholder:font-[500] outline-none border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px]'
+              type='text'
+              placeholder='Name'
+              {...register('name', { 
+                required: 'Name is required',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters'
+                },
+                pattern: {
+                  value: /^[A-Za-z\s]+$/,
+                  message: 'Name can only contain letters and spaces'
+                }
+              })}
+            />
+            {errors.name && (
+              <p className='text-red-500 text-[10px] font-manrope mt-1'>{errors.name.message}</p>
+            )}
+          </div>
+
+          <div>
+            <input
+              className='py-[15px] w-[100%] placeholder:font-[500] outline-none mt-[15px] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[15px]'
+              type='email'
+              placeholder='Email'
+              {...register('email', {
+                required: 'Email is required',
+                pattern: {
+                  value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                  message: 'Please enter a valid email address',
+                },
+              })}
+            />
+            {errors.email && (
+              <p className='text-red-500 text-[10px] font-manrope mt-1'>{errors.email.message}</p>
+            )}
+          </div>
+
+          <div>
+            <input
+              className='py-[15px] w-[100%] placeholder:font-[500] outline-none mt-[15px] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px]'
+              type='tel'
+              placeholder='Contact No.'
+              {...register('phone', {
+                required: 'Contact number is required',
+                pattern: {
+                  value: /^[\+]?[(]?[\d\s\-\(\)]{10,}$/,
+                  message: 'Please enter a valid phone number (minimum 10 digits)',
+                },
+                minLength: {
+                  value: 10,
+                  message: 'Phone number must be at least 10 digits'
+                }
+              })}
+            />
+            {errors.phone && (
+              <p className='text-red-500 text-[10px] font-manrope mt-1'>{errors.phone.message}</p>
+            )}
+          </div>
+
+          <div>
+            <textarea
+              cols='1'
+              rows='1'
+              className='py-[30px] outline-none w-[100%] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px] resize-none'
+              placeholder='Comments'
+              {...register('comments', { 
+                required: 'Comments are required',
+                minLength: {
+                  value: 10,
+                  message: 'Comments must be at least 10 characters'
+                },
+                maxLength: {
+                  value: 500,
+                  message: 'Comments cannot exceed 500 characters'
+                }
+              })}
+            ></textarea>
+            {errors.comments && (
+              <p className='text-red-500 text-[10px] font-manrope mt-1'>{errors.comments.message}</p>
+            )}
+          </div>
+
+          <button
+            type='submit'
+            disabled={isSubmitting}
+            className='bg-[var(--primary-color)] uppercase w-[100%] text-white mt-[40px] py-[15px] hover:opacity-90 transition-opacity disabled:opacity-50'
+          >
+            {isSubmitting ? 'Sending...' : 'Submit Now'}
+          </button>
+        </form>
+      </div>
     </div>
-  )
+  );
 }

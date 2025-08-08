@@ -23,7 +23,6 @@ export default function Header({openModal}) {
     }else{
       setActive(true);
     }
-    // if
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -49,8 +48,6 @@ export default function Header({openModal}) {
               />
             </Link>
             <ul className={`menu__list flex gap-[30px] uppercase ml-[auto] me-[30px] tracking-[2px]`}>
-              {/* <li><Link className='text-white'  to={'#'}>Home </Link></li>
-              <li><Link className='text-white'  to={'#'}>Projects </Link></li> */}
               <li><Link className='text-white lg:block hidden text-[14px]'  to={'/about'}>About Us </Link></li>
               <li><Link className='text-white lg:block hidden text-[14px]'  onClick={openModal} to={'#'}> Contact us </Link></li>
             </ul>

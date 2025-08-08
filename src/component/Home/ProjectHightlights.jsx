@@ -206,7 +206,7 @@ const ProjectHighlights = () => {
                 
                 <img 
                     src="/assets/icons/coconut_blob.png" 
-                    className="absolute w-[180px] right-[0] bottom-0 right-0" 
+                    className="absolute w-[180px] right-[0] bottom-0 z-[-1] right-0" 
                     alt="" 
                 />
             </div>

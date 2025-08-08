@@ -3,6 +3,7 @@ import Form_sec from "../component/Home/Form_sec";
 import Banner from "../component/About/Banner";
 import AboutContent from "../component/About/AboutContent";
 import { Suspense } from "react";
+import FounderSec from "../component/About/FounderSec";
 const About = () => {
     return <>
             <Suspense fallback={<h1>Banner</h1>}>
@@ -11,6 +12,9 @@ const About = () => {
                <Suspense fallback={<h1>Video </h1>}>
                 <AboutContent/>
             </Suspense>
+             <Suspense fallback={<h1>Form</h1>}>
+                <FounderSec/>
+            </Suspense> 
             <Suspense fallback={<h1>Video </h1>}>
                 <VideoCta/>
             </Suspense>

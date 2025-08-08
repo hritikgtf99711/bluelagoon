@@ -20,7 +20,7 @@ export default function Footer({ openModal }) {
               <li>
                 <NavLink
                   to="/"
-                  className="text-white uppercase font-[500] me-[65px]"
+                  className="text-white uppercase lg:text-[14px] text-[13px] font-[500] me-[65px]"
                 >
                   Home
                 </NavLink>
@@ -29,7 +29,7 @@ export default function Footer({ openModal }) {
               <li>
                 <NavLink
                   to="/about"
-                  className="text-white uppercase font-[500] me-[65px]"
+                  className="text-white uppercase lg:text-[14px] text-[13px] font-[500] me-[65px]"
                 >
                   about us
                 </NavLink>
@@ -38,7 +38,7 @@ export default function Footer({ openModal }) {
                 <a
                   href="javascript:void(0)"
                   onClick={openModal}
-                  className="text-white uppercase font-[500]"
+                  className="text-white uppercase lg:text-[14px] text-[13px] font-[500]"
                 >
                   contact us
                 </a>
@@ -49,20 +49,20 @@ export default function Footer({ openModal }) {
           <ul className="my-[45px]">
             <li className="text-[16px] mb-[16px] tracking-[1px]">
               <span>Head Office:</span>
-              <span className="font-manrope text-[14px]">
+              <span className="font-manrope ml-[6px] text-[12px] lg:text-[14px]">
                 Plot no. 65, Sector-18 Gurugram, Haryana - 122001, India
               </span>
             </li>
             <li className="text-[16px] mb-[16px] tracking-[1px]">
               <span>Sales Office:</span>
-              <span className="font-manrope text-[14px]">
+              <span className="font-manrope ml-[6px] text-[12px] lg:text-[14px]">
                 1st Floor, Rainbow Central, Ocean Front, Hulhumale Phase I,
                 Republic of Maldives
               </span>
             </li>
             <li className="text-[16px]  tracking-[1px]">
               <span>Site Address:</span>
-              <span className="font-manrope text-[14px]">
+              <span className="font-manrope ml-[6px] text-[12px] lg:text-[14px]">
                 Plot no 20094, Fithuroanu Magu, Hulhumalé Phase II, Republic of
                 Maldives
               </span>
@@ -70,15 +70,15 @@ export default function Footer({ openModal }) {
           </ul>
         </div>
         <ul className="lg:flex  justify-between m-0 py-[20px] border-t-[1px] border-[#ede7d34d]">
-          <li className="font-manrope text-[12px] tracking-[0.5px] lg:mb-0 mb-[6px]  lg:text-[14px]">
-            <NavLink to="/disclaimer" className="font-manrope ">
+          <li className="font-manrope text-[12px] flex tracking-[0.5px] lg:mb-0 mb-[6px]  lg:text-[14px]">
+            <NavLink to="/disclaimer" className="font-manrope">
               Disclaimer & Privacy Policy
             </NavLink>
-            | Copyright ©Blue lagoon 2025
+           <span className="block mx-[5px]">|</span>  Copyright ©Blue lagoon 2025
           </li>
-          <li className="font-manrope text-[12px] tracking-[0.5px] lg:text-[14px]">
-            All Rights Reserved |
-            <a href="" className="font-manrope " target="_blank">
+          <li className="font-manrope text-[12px] flex tracking-[0.5px] lg:text-[14px]">
+            All Rights Reserved  <span className="block mx-[5px]">|</span>
+             <a href="" className="font-manrope ml-[3px]" target="_blank">
               Crafted by GTF Technologies
             </a>
           </li>
