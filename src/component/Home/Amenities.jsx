@@ -33,7 +33,7 @@ export default function Amenities() {
           data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"
           alt="Rooftop Amenities Map"
         />
-        <div className="grid grid-cols-6 gap-[10px]" data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">  
+        <div className="grid grid-cols-2 lg:grid-cols-6 lg:gap-[10px]" data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">  
           {amenitiesData.map((column, index) => (
             <div key={`col-span-${index}`} className="col">
               <ol className="ps-4">

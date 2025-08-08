@@ -8,20 +8,19 @@ const Typology=()=>{
             </div>
         </div>
         <div className="container !mt-[50px]" >
-               <div className="grid grid-cols-7">
+               <div className="grid grid-cols-3 lg:grid-cols-7 ">
                 <div className="col-span text-center" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6">
-                    
                     <h3 className="text-white text-[24px] py-[15px] font-[500]">2 bhk</h3>
                 </div>
-                <div className="col-span h-[100%] m-[auto] bg-[linear-gradient(0deg,rgba(26,74,91,0)_0%,#EDE7D3_49.5192%,rgba(26,74,91,0)_100%)]  w-[1px] verticle_gr" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6"></div>
+                <div className="lg:block  col-span-1 lg:col-span h-[100%] m-[auto] bg-[linear-gradient(0deg,rgba(26,74,91,0)_0%,#EDE7D3_49.5192%,rgba(26,74,91,0)_100%)]  w-[1px] verticle_gr" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6"></div>
                  <div className="col-span text-center" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6">
                     <h3 className="text-white text-[24px] py-[15px] font-[500]">2 bhk Large</h3>
                 </div>
-                 <div className="col-span h-[100%] m-[auto] bg-[linear-gradient(0deg,rgba(26,74,91,0)_0%,#EDE7D3_49.5192%,rgba(26,74,91,0)_100%)]  w-[1px] verticle_gr" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6"></div>
+                 <div className="lg:block hidden col-span-1 lg:col-span h-[100%] m-[auto] bg-[linear-gradient(0deg,rgba(26,74,91,0)_0%,#EDE7D3_49.5192%,rgba(26,74,91,0)_100%)]  w-[1px] verticle_gr" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6"></div>
                  <div className="col-span text-center" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6">
                     <h3 className="text-white text-[24px] py-[15px] font-[500]">2+1 bhk</h3>
                 </div>
-                 <div className="col-span h-[100%] m-[auto] bg-[linear-gradient(0deg,rgba(26,74,91,0)_0%,#EDE7D3_49.5192%,rgba(26,74,91,0)_100%)]  w-[1px] verticle_gr" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6"></div>
+                 <div className="lg:block  col-span h-[100%] m-[auto] bg-[linear-gradient(0deg,rgba(26,74,91,0)_0%,#EDE7D3_49.5192%,rgba(26,74,91,0)_100%)]  w-[1px] verticle_gr" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6"></div>
                  <div className="col-span text-center" data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6">
                     <h3 className="text-white text-[24px] py-[15px] font-[500]">3 bhk</h3>
                 </div>

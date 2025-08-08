@@ -64,11 +64,11 @@ function Layout({ children }) {
           <div id="main-content" ref={containerRef}>
             
             <Outlet context={outletContext} />
-            <Footer />
+            <Footer  openModal={openModal}/>
           </div>
         </div>
       </div>
-      <FormModal setIsOpen={setIsOpen} isOpen={isOpen} closeModal={closeModal} />
+      <FormModal setIsOpen={setIsOpen}  isOpen={isOpen} closeModal={closeModal} />
     </>
   );
 }

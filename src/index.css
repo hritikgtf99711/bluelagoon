@@ -7,7 +7,7 @@
 }
 *{font-family: "Cinzel", serif;}
 body{background-color: var(--secondary-color);}
-.container{margin: auto;}
+.container{margin: auto;padding-left: 15px;padding-right: 15px;}
 p{letter-spacing: 0.5px;font-size: 14px;}
 .shadow-custom{box-shadow: 4px 4px 20px 0 rgba(35, 81, 98, 0.63);}
 .font-manrope{  font-family: "Manrope", sans-serif;}
@@ -15,7 +15,7 @@ p{letter-spacing: 0.5px;font-size: 14px;}
 .header__main img{transition: 1s all;}
 .header__main.active{background:var(--primary-color);position: fixed;padding-block: 18px;}
 .header__main.active .book_btn{background-color: #fff;color:#000;font-weight: 500;}
-.header__main.active img{width: 130px;}
+.header__main.active .logo{width: 130px;}
 .content_ref{opacity: 0;}
 .content_sec,
 .content_sec * {
@@ -65,14 +65,27 @@ top: 28% !important;}
 
 @media (max-width: 1280px) {
     .banner_sec{background-position-y:-180px ;}
-    .banner_sec .heading-text{top: 32%!important;}
+    .banner_sec .heading-text{top: 28%!important;}
+    
+}
+
+@media (max-width: 991px) {
+    .banner_sec{background-position: bottom;}
 }
 @media (max-width: 575.98px) {
+    
+/* h3{font-size: 25px;} */
+
+h2{font-size: 24px;padding:0px 20px}
 .container {
 max-width: 100%;
 }
 }
 
+@media (max-height: 730px) {
+.banner_sec {background-position-y:-196px}
+.content_sec p{font-size: 13px;}
+}
 @media (min-width: 576px) {
 .container {
 max-width: 500px;
@@ -88,6 +101,7 @@ max-width: 700px;
 @media (min-width: 992px) {
 .container {
 max-width: 900px; 
+
 }
 }
 

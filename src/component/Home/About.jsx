@@ -15,6 +15,9 @@ export default function About() {
   const contentRef = useRef(null);
 
   useEffect(() => {
+    if(window.innerWidth<991){
+      return
+    }
     ScrollTrigger.create({
       trigger: stickyRef.current,
       pin: true,
@@ -96,24 +99,24 @@ export default function About() {
   }, []);
 
   return (
-    <section className="py-20 min-h-screen">
-      <div className="grid grid-cols-12 gap-20">
-        <div className="col-span-3 flex flex-col gap-4">
+    <section className="py-20 min-h-screen lg:px-0 px-[15px]">
+      <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
+        <div className="col-span lg:col-span-3 flex flex-col gap-4">
            <img
             src="/assets/images/home/about/about_1.jpg"
-            className="mx-auto h-[400px]  rounded-br-[10px] rounded-tr-[10px]  w-[100%] object-cover  mt-[400px] max-w-full"
+            className="mx-auto h-[400px]  lg:rounded-br-[10px] rounded-[10px] lg:rounded-tr-[10px]  w-[100%] object-cover lg:mt-[400px] max-w-full"
             alt="About_1 design"
             ref={(el) => (rightImagesRef.current[0] = el)}
           />
           <img
             src="/assets/images/home/about/about_1.jpg"
-            className="mx-auto h-[400px] w-[100%]  rounded-br-[10px] rounded-tr-[10px] object-cover mt-[450px] max-w-full"
+            className="mx-auto h-[400px] w-[100%]  lg:rounded-br-[10px] rounded-[10px] lg:rounded-tr-[10px] object-cover lg:mt-[450px] max-w-full"
             alt="About_1 design"
             ref={(el) => (rightImagesRef.current[1] = el)}
           />
         </div>
 
-        <div className="col-span-6 text-center" ref={stickyRef}>
+        <div className="col-span-6 lg:my-0 my-[20px] text-center" ref={stickyRef}>
           <div className="mb-12  " ref={contentRef}>
             <img
               src="/assets/icons/icon_design.svg"
@@ -159,17 +162,17 @@ export default function About() {
           </div>
         </div>
 
-        <div className="col-span-3 flex flex-col gap-4">
+        <div className="col-span lg:col-span-3  flex flex-col gap-4">
          
           <img
             src="/assets/images/home/about/about_2.jpg"
-            className="mx-auto h-[400px] w-[100%] rounded-bl-[10px] rounded-tl-[10px] object-cover max-w-full"
+            className="mx-auto h-[400px] w-[100%] lg:rounded-bl-[10px] rounded-[10px] lg:rounded-tl-[10px] object-cover max-w-full"
             alt="About_2 design"
             ref={(el) => (leftImagesRef.current[0] = el)}
           />
           <img
             src="/assets/images/home/about/about_2.jpg"
-            className="mx-auto h-[400px] object-cover rounded-bl-[10px]  rounded-tl-[10px] w-[100%] max-w-full mt-[300px]"
+            className="mx-auto h-[400px] object-cover lg:rounded-bl-[10px] rounded-[10px]  lg:rounded-tl-[10px] w-[100%] max-w-full lg:mt-[300px]"
             alt="About_2 design"
             ref={(el) => (leftImagesRef.current[1] = el)}
           />

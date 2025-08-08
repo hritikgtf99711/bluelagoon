@@ -13,12 +13,15 @@ const ProjectHighlights = () => {
     const containerRef = useRef(null);
 
     useEffect(() => {
+        if(window.innerWidth<991)
+        {
+            return
+        }
         const rightSection = rightSectionRef.current;
         const container = containerRef.current;
 
         if (!rightSection || !container) return;
 
-        // Create sticky effect for the right section
         const stickyTl = gsap.timeline({
             scrollTrigger: {
                 trigger: container,
@@ -32,7 +35,6 @@ const ProjectHighlights = () => {
             }
         });
 
-        // Cleanup function
         return () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
@@ -60,8 +62,8 @@ const ProjectHighlights = () => {
                 <Headings headings={<span>Where experience <span className="lg:block"></span>is elevated</span>} />
             </div>
             
-            <div ref={containerRef} className="grid grid-cols-12 gap-[40px] mt-[60px] relative min-h-screen">
-                <div className="col-span-6 mb-[auto]">
+            <div ref={containerRef} className="grid grid-cols-1 lg:grid-cols-12 gap-[40px] mt-[60px] relative min-h-screen">
+                <div className="lg:col-span-6 col-span mb-[auto]">
                     <img 
                     ref={rightSectionRef}
                         src="/assets/images/home/project_highlights.png" 
@@ -75,7 +77,7 @@ const ProjectHighlights = () => {
                 
                 <div 
                     
-                    className="col-span-5 m-auto " 
+                    className="lg:col-span-5 col-span m-auto  lg:px-[0] px-[15px]" 
                     data-gsap="fade-down" 
                     data-gsap-duration="1" 
                     data-gsap-delay="0.6"

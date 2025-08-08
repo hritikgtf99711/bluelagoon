@@ -1,6 +1,8 @@
         import React from 'react' 
-
+import { useOutletContext } from 'react-router-dom'
         export default function VideoCta() {
+                const { openModal, closeModal, isOpen } = useOutletContext();
+
         return (
             <section className=' relative '>
                 <video className="w-[100%] h-[100%] absolute top-0 object-cover" autoPlay muted>
@@ -14,7 +16,7 @@
                             – our dedicated team is standing by to craft your <span className='lg:block'></span>
                             personalized coastal experience.</p>
 
-                        <a href='#' className='bg-[white] text-[#000] uppercase font-[600] inline-block  font-[500] px-[40px] py-[12px]'  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6">Download Brochure</a>
+                        <a href='javascript:void(0)' onClick={openModal} className='bg-[white] text-[#000] uppercase font-[600] inline-block  font-[500] px-[40px] py-[12px]'  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6">Download Brochure</a>
                             </div>
                 </div>
             </section>
