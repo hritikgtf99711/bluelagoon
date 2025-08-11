@@ -3,56 +3,56 @@ import Headings from '../../utils/Headings';
 import ArtisticImpression from '../../utils/ArtisticImpression';
 const amenitiesData = [
   {
-    image: '/assets/images/home/amenities/amenities_1.jpg',
+    image: '/assets/images/home/amenities/amenities_1.webp',
     title: 'State-of-the-Art Clubhouse',
     description:
       'Designed as an extension of your sophisticated lifestyle, this exclusive space offers an ideal setting for both socialising and unwinding. Whether hosting intimate gatherings or attending curated resident events, the clubhouse provides an elegant backdrop for unforgettable moments. This 2 storey Clubhouse will have its own entrance lobby, and dedicated lift.',
     imageOnLeft:window.innerWidth<991?true: true,
   },
   {
-    image: '/assets/images/home/amenities/amenities_2.jpg',
+    image: '/assets/images/home/amenities/amenities_2.webp',
     title: 'Multipurpose Hall',
     description:
       'The multipurpose hall is designed to accommodate everything from exclusive business meetings to intimate private events. With its sophisticated decor and flexible layout, this hall transforms effortlessly to meet your high expectations.',
     imageOnLeft:window.innerWidth<991?true: false,
   },
   {
-    image: '/assets/images/home/amenities/amenities_3.jpg',
+    image: '/assets/images/home/amenities/amenities_3.webp',
     title: 'Children’s Play Area',
     description:
       'Our carefully designed children’s play area offers a safe, and engaging environment where young residents can let their imaginations run free. With high-quality, interactive play areas and soft, modern furnishings, this space is perfect for creating joyful memories for the little ones.',
     imageOnLeft:window.innerWidth<991?true: true,
   },
   {
-    image: '/assets/images/home/amenities/amenities_4.jpg',
+    image: '/assets/images/home/amenities/amenities_4.webp',
     title: 'Fully-Equipped Gymnasium',
     description:
       'Achieve your wellness goals in our cutting-edge gym, featuring the latest in high performance equipment. Thoughtfully designed to cater to all fitness levels, this space offers a private, serene environment where you can work towards your health and fitness journey',
     imageOnLeft:window.innerWidth<991?true: false,
   },
   {
-    image: '/assets/images/home/amenities/amenities_5.jpg',
+    image: '/assets/images/home/amenities/amenities_5.webp',
     title: 'Theatre',
     description:
       'Experience the magic of cinema in the comfort of your own residence. Our luxurious private theatre is designed to deliver a truly immersive viewing experience. Whether you’re hosting a private screening or enjoying a quiet movie night, this theatre provides a world-class experience.',
     imageOnLeft:window.innerWidth<991?true: true,
   },
   {
-    image: '/assets/images/home/amenities/amenities_6.jpg',
+    image: '/assets/images/home/amenities/amenities_6.webp',
     title: 'Entrance Lobby',
     description:
       'The building hosts not one but 3 entrance lobbies with a separate lobby for the club ensuring huge degree of privacy within the building.',
     imageOnLeft:window.innerWidth<991?true: false,
   },
   {
-    image: '/assets/images/home/amenities/amenities_7.jpg',
+    image: '/assets/images/home/amenities/amenities_7.webp',
     title: 'LARGE SEMI-FURNISHED APARTMENTS',
     description:
       'Fully air conditioned, Luxury specifications, Walk-in wardrobes',
     imageOnLeft:window.innerWidth<991?true: true,
   },
   {
-    image: '/assets/images/home/amenities/amenities_8.jpg',
+    image: '/assets/images/home/amenities/amenities_8.webp',
     title: 'LARGE BALCONY HOMES',
     description:
       'A minimum of 320sqft of balcony space with every apartment.',
