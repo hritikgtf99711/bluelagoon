@@ -1,7 +1,7 @@
 import Headings from "../../utils/Headings";
 const Typology = () => {
   return (
-    <section className="bg-[url('/assets/images/home/typology/typology-banner.jpg')] bg-[cover] py-[80px]">
+    <section className="bg-[url('/assets/images/home/typology/typology-banner.jpg')] bg-[cover] py-[80px] pb-[70px]">
       <div className="heading_container text-center mb-[20px]">
         <img
           src="/assets/icons/icon_design_secondary.svg"

@@ -8,7 +8,7 @@ const Banner = () => {
         window.innerWidth < 991
           ? "bg-[url('/assets/images/home/banner_mob.webp')]"
           : "bg-[url('/assets/images/home/banner.webp')]"
-      } banner_sec bg-cover bg-no-repeat bg-[bottom] relative h-[80vh] lg:h-screen w-screen`}
+      } banner_sec bg-cover bg-no-repeat bg-[bottom] relative h-[70vh] lg:h-screen w-screen`}
     >
         <div className="image_overlay absolute top-0 left-0 h-[100%] w-[100%] bg-[#00000042]"></div>
       <div className="container lg:block flex flex-col place-items-center  justify-center relative z-[1] h-[100%]">
