@@ -78,7 +78,13 @@ export default function Footer({ openModal }) {
               className="font-manrope"
               onClick={() =>{ 
                 
-                window.scrollTo(0, 0)
+
+                location("/disclaimer");
+                setTimeout(()=>{
+                                window.scrollTo(0, 0)
+
+                },200)
+
               }}
             >
               Disclaimer & Privacy Policy

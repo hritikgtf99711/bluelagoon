@@ -3,7 +3,7 @@ import Headings from '../utils/Headings'
 export default function Disclaimer() {
   return (
     <section className='py-[120px]'>
-        <div className='container'>
+        <div className='container min-h-[60vh] flex justify-center flex-col'>
                 <Headings headings={"Disclaimer & Privacy Policy"}/>
                 <p className='font-manrope mt-[30px] lg:px-[40px] text-center'>Information in this website is for general
                     information and illustrative purposes only and does not constitute an offer or contract, and

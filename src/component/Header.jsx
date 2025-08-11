@@ -27,13 +27,14 @@ export default function Header({openModal}) {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [])
+  }, [nav.pathname])
   const openSideMenu=()=>{
     setopenSideMenu(true)
 
   }
    useEffect(()=>{
-setopenSideMenu(false)
+setopenSideMenu(false);
+
     },[nav.pathname])
   return (
     <>
