@@ -34,7 +34,9 @@ export default function Header({openModal}) {
   }
    useEffect(()=>{
 setopenSideMenu(false);
-
+ setTimeout(()=>{
+                 window.scrollTo(0, 0)
+                },200)
     },[nav.pathname])
   return (
     <>
