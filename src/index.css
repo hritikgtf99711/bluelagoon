@@ -4,7 +4,7 @@
 :root{
 --primary-color:#235162;
 --secondary-color:#EDE7D3;
-  --gradient: linear-gradient(0deg, rgba(26, 74, 91, 0) 0%, #EDE7D3 49.5192%, rgba(26, 74, 91, 0) 100%);
+--gradient: linear-gradient(0deg, rgba(26, 74, 91, 0) 0%, #EDE7D3 49.5192%, rgba(26, 74, 91, 0) 100%);
 }
 *{font-family: "Cinzel", serif;}
 body{background-color: var(--secondary-color);}
@@ -48,10 +48,10 @@ transform: translateZ(0);
 
 
 @media (max-width: 1536px) and (min-width: 1440px) {
-  .heading-text {
-    top: 24%;
-    font-size: 32px;
-  }
+.heading-text {
+top: 24%;
+font-size: 32px;
+}
 }
 @media (max-width: 1440px) {
 .heading-text {
@@ -81,38 +81,38 @@ top: 28% !important;}
 }
 
 @media (max-width: 991px) {
-  .typology-point .type_itm {
-  position: relative;
+.typology-point .type_itm {
+position: relative;
 }
-
+.bg_mob{background-position: bottom;}
 .typology-point .type_itm::after {
-  content: "";
-  position: absolute;
-  height: 70%;
-  width: 2px;
-  background: var(--gradient);
-  top: 0;
-  right: 0;
+content: "";
+position: absolute;
+height: 70%;
+width: 2px;
+background: var(--gradient);
+top: 0;
+right: 0;
 }
 
 .typology-point .type_itm:nth-child(3)::after {
-  content: none;
+content: none;
 }
 
 .typology-point .type_itm:nth-child(5)::before {
-  content: none;
-  display: none;
+content: none;
+display: none;
 }
 
 .typology-point .type_itm::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  background: var(--gradient);
-  bottom: -50%;
-  left: 50%;
-  transform: translateX(-50%) rotate(270deg);
+content: "";
+position: absolute;
+height: 100%;
+width: 2px;
+background: var(--gradient);
+bottom: -50%;
+left: 50%;
+transform: translateX(-50%) rotate(270deg);
 }
 .banner_sec{background-position: bottom;}
 }

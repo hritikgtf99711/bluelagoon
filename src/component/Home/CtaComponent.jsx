@@ -1,6 +1,6 @@
 import ArtisticImpression from "../../utils/ArtisticImpression"
 const CtaComponent=()=>{
-    return <section className="bg-[url('/assets/images/home/cta_banner.jpg')]  bg-[bottom] relative bg-[cover] lg:h-[100vh] h-[60vh]" >
+    return <section className="bg-[url('/assets/images/home/cta_banner.jpg')] bg_mob relative bg-[cover] lg:h-[100vh] h-[60vh]" >
         <div className="container  h-[100%]  lg:bg-[transparent] bg-[#000000a3] lg:py-0 py-[80px]">
             <div className="lg:grid-cols-12 grid-cols-1 grid h-[100%]">
                 <div className="col-span-6 m-auto">
