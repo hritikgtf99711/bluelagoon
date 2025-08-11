@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function Footer({ openModal }) {
+  const location=useNavigate();
   return (
     <footer className="bg-[var(--primary-color)] text-white text-center pt-[80px]">
       <div className="container">
@@ -71,9 +73,16 @@ export default function Footer({ openModal }) {
         </div>
         <ul className="lg:flex  justify-between m-0 py-[20px] border-t-[1px] border-[#ede7d34d]">
           <li className="font-manrope text-[10px] lg:flex tracking-[0.5px] lg:mb-0 mb-[6px]  lg:text-[14px]">
-            <NavLink to="/disclaimer" className="font-manrope">
+            <a
+              href="javascript:void(0)"
+              className="font-manrope"
+              onClick={() =>{ 
+                
+                window.scrollTo(0, 0)
+              }}
+            >
               Disclaimer & Privacy Policy
-            </NavLink>
+            </a>
            <span className="inline-block mx-[5px]">|</span>  Copyright ©Blue lagoon 2025
           </li>
           <li className="font-manrope text-[10px] lg:flex tracking-[0.5px] lg:text-[14px]">

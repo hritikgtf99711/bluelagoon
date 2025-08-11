@@ -11,11 +11,11 @@ export default function Essential_Features() {
             <Headings classNames=' text-[var(--secondary-color)] ' headings={<span>Designed with Purpose<span className="lg:block"></span>and Precision</span>} />
         </div>
         <div className='container'>
-            <div className='grid grid-cols-1 lg:grid-cols-12 gap-[40px] lg:gap-[80px] lg:mt-[150px]'>
+            <div className='grid grid-cols-1 lg:grid-cols-12 gap-[40px] lg:gap-[80px] mt-[40px] lg:mt-[150px]'>
                 <div className='col-span-4' >
                     <div className='cars_item'>
                         <div className='relative'>
-                        <img src='/assets/images/home/essential/essential_1.jpg' data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6" className='w-[100%]' alt='essential 1'/>
+                        <img src='/assets/images/home/essential/essential_1.webp' data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6" className='w-[100%]' alt='essential 1'/>
                         <ArtisticImpression/>
                         </div>
                         <h3 className='text-[var(--secondary-color)] text-[20apx] lg:text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Elevators</h3>
@@ -24,7 +24,7 @@ export default function Essential_Features() {
                  <div className='col-span-4 lg:mt-[-85px]' >
                     <div className='cars_item'>
                         <div className='relative'>
-                        <img src='/assets/images/home/essential/essential_2.jpg' className='w-[100%]'  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6" alt='essential 1'/>
+                        <img src='/assets/images/home/essential/essential_2.webp' className='w-[100%]'  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6" alt='essential 1'/>
                          <ArtisticImpression/>
                         </div>
                         <h3 className='text-[var(--secondary-color)] text-[20apx] lg:text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Smart Home <span className='lg:block'></span> Technology</h3>
@@ -33,7 +33,7 @@ export default function Essential_Features() {
                  <div className='col-span-4'>
                     <div className='cars_item'>
                         <div className='relative'>
-                        <img src='/assets/images/home/essential/essential_3.jpg' className='w-[100%] '  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"  alt='essential 1' />
+                        <img src='/assets/images/home/essential/essential_3.webp' className='w-[100%] '  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"  alt='essential 1' />
                          <ArtisticImpression/>
                         </div>
                         <h3 className='text-[var(--secondary-color)] text-[20apx] lg:text-[24px] text-center mt-[25px]' data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">Security</h3>

@@ -19,7 +19,7 @@ export default function AboutContent() {
               <span>A PROJECT BY <span className="lg:block"></span> VARENDERA CONSTRUCTIONS <span className="lg:block"></span> INTERNATIONAL LIMITED</span>
             }
           />
-          <p  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="text-[14px] font-[300] leading-[25px] tracking-[1px] font-manrope text-center my-[25px] text-normal lowercase">
+          <p  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="text-[14px] font-[300] leading-[25px] tracking-[1px] font-manrope text-center my-[25px] text-normal ">
             We are a leading integrated Engineering, Procurement, and
             Construction (EPC) company with vast experience in delivering
             diverse building projects. Our portfolio includes residential
@@ -29,7 +29,7 @@ export default function AboutContent() {
             hangars, and roads, demonstrating our wide-ranging capabilities
             across various sectors.
           </p>
-          <p  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="text-[14px] font-[300] leading-[25px] tracking-[1px] font-manrope text-center my-[25px] text-normal lowercase">
+          <p  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="text-[14px] font-[300] leading-[25px] tracking-[1px] font-manrope text-center my-[25px] text-normal ">
             Founded in 1987 by Mr. Varinder Garg, our company has grown into a
             key player in the construction industry. Under his visionary
             leadership, we have evolved from executing small-scale projects like

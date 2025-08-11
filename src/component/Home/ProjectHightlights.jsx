@@ -25,7 +25,7 @@
             const stickyTl = gsap.timeline({
                 scrollTrigger: {
                     trigger: container,
-                    start: "top 250",
+                    start: "top center-=200px",
                     end: "bottom bottom",
                     pin: rightSection,
                     pinSpacing: false,
@@ -206,7 +206,7 @@
                     
                     <img 
                         src="/assets/icons/coconut_blob.png" 
-                        className="absolute w-[180px] right-[0] bottom-0 z-[-1] right-0" 
+                        className="absolute w-[180px] right-[0] lg:block hidden bottom-0 z-[-1] right-0" 
                         alt="" 
                     />
                 </div>

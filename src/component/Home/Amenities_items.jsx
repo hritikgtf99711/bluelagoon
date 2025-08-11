@@ -61,15 +61,15 @@ const amenitiesData = [
 ];
 
 const AmenityItem = () => (
-      <div className="amenities-items pt-16">
-        {amenitiesData.map((item)=>{
+      <div className="amenities-items lg:pt-16">
+        {amenitiesData.map((item,index)=>{
             const {imageOnLeft,title,description,image}=item;
-   return <div className="grid grid-cols-1 gap-[10px] lg:grid-cols-12 lg:gap-[100px] gap-[20px] pb-[25px] lg:pb-[100px]">
-    <div className={`col-span lg:col-span-7 ${imageOnLeft ? 'order-1' : 'order-2'}`}>
-      <div className='relative'>
+   return <div className={`grid grid-cols-1 lg:py-0 lg:mb-0 lg:border-0 py-[50px] mb-[20px] border-b-[1px] border-[#23516252] gap-[10px] lg:grid-cols-12 lg:gap-[100px] gap-[20px] pb-[25px] lg:pb-[100px]`}>
+    <div className={`col-span  lg:col-span-7 ${imageOnLeft ? 'order-1' : 'order-2'}`}>
+      <div className='relative overflow-hidden rounded-lg'>
       <img
         src={image}
-        className="w-full rounded-lg"
+        className="w-full "
         alt={`${title} amenity`}
         data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"
         width="800"

@@ -1,6 +1,6 @@
 import ArtisticImpression from "../../utils/ArtisticImpression"
 const CtaComponent=()=>{
-    return <section className="bg-[url('/assets/images/home/cta_banner.jpg')]  relative bg-[cover] lg:h-[100vh]" >
+    return <section className="bg-[url('/assets/images/home/cta_banner.jpg')]  relative bg-[cover] lg:h-[100vh] h-[60vh]" >
         <div className="container  h-[100%]  lg:bg-[transparent] bg-[#000000a3] lg:py-0 py-[80px]">
             <div className="lg:grid-cols-12 grid-cols-1 grid h-[100%]">
                 <div className="col-span-6 m-auto">
@@ -14,7 +14,7 @@ const CtaComponent=()=>{
             <h2 data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6"  className="lg:bg-gradient-to-t from-[#412C24] uppercase lg:!text-[60px] !text-[35px] font-[600] to-[#1A4A5B] text-[#fff] lg:text-transparent lg:bg-clip-text">Maldives</h2>
         </div>
         </div>
-         <div className="col-span-6"></div>
+         <div className="lg:block hidden col-span-6"></div>
         </div>
 </div>
 <ArtisticImpression/>
