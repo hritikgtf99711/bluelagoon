@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-export default function Form() {
+export default function Form({setIsOpen}) {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate=useNavigate();
@@ -24,7 +24,8 @@ export default function Form() {
       }
 
       const result = await response.json();
-      navigate(import.meta.env.VITE_BASE_URL+"thankyou")
+      navigate(import.meta.env.VITE_BASE_URL+"thankyou");
+      setIsOpen(false)
       reset(); 
     } catch (error) {
       console.error('Error submitting form:', error);

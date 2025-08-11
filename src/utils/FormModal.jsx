@@ -30,7 +30,7 @@ const FormModal = ({isOpen, setIsOpen,closeModal}) => {
                 />
               </svg>
             </button>
-            <Form/>
+            <Form setIsOpen={setIsOpen}/>
             
           </div>
         </div>
