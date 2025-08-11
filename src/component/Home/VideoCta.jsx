@@ -5,7 +5,7 @@ import { useOutletContext } from 'react-router-dom'
 
         return (
             <section className=' relative '>
-                <video className="w-[100%] h-[100%] absolute top-0 object-cover" loop autoPlay muted>
+                <video className="w-[100%] h-[100%] absolute top-0 object-cover" playsInline loop autoPlay muted>
                         <source src="/assets/video/cta_video.mp4" type="video/mp4"/>
                         Your browser does not support the video tag.
                     </video>
