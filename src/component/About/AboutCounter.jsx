@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -6,10 +6,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutCounter() {
   const counterRefs = useRef([]);
+  const [triggerEnabled, setTriggerEnabled] = useState(false);
 
   useEffect(() => {
+    const timeout = setTimeout(() => {
+      setTriggerEnabled(true);
+    }, 2000); // ⏱️ Wait 2s after page load
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    if (!triggerEnabled) return;
+
     const animations = counterRefs.current.map((el) => {
-      const targetValue = Number(el.dataset.target || 0); // Store number in data-target
+      const targetValue = Number(el.dataset.target || 0);
 
       return gsap.fromTo(
         el,
@@ -22,7 +33,7 @@ export default function AboutCounter() {
           scrollTrigger: {
             trigger: el.parentElement,
             start: 'top 80%',
-            once: true, // play only once
+            once: true,
           },
           onUpdate: function () {
             el.innerText = Math.ceil(el.innerText);
@@ -31,14 +42,13 @@ export default function AboutCounter() {
       );
     });
 
-    // Ensure ScrollTrigger recalculates positions after mount
     ScrollTrigger.refresh();
 
     return () => {
       animations.forEach((anim) => anim.kill());
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, []);
+  }, [triggerEnabled]);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] relative mt-[40px]">
