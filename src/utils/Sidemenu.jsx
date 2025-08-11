@@ -22,14 +22,15 @@ export default function Sidemenu({onClick,openSideMenu,setopenSideMenu}) {
              <li className='border-b-[1px] border-[#2351622b] px-[20px] py-[20px] text-[16px]'><NavLink className='text-[var(--primary-color)]  text-[18px]'  to={'/about'}>About Us </NavLink></li>
               <li className='border-b-[1px] border-[#2351622b] px-[20px] py-[20px] text-[16px]'><NavLink className='text-[var(--primary-color)]  text-[18px]'  onClick={onClick} to={'#'}> Contact us </NavLink></li>
         </ul>
+       
          
-        <div className='text-center mt-[30px]'>
+        <div className=' mt-[30px]'>
       <button
             onClick={onClick}
               className='lg:text-[14px] text-[14px] !bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] !text-white uppercase mx-[20px]  m-[auto]   lg:px-8 lg:py-3 px-[30px] py-[10px]'
             >Book a Meeting</button>
 
-              <ul className="lg:inline-block my-[30px]  flex lg:w-[auto] w-[100%] place-items-center justify-center gap-[20px]" data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
+               <ul className="lg:inline-block my-[30px]  flex lg:w-[auto] w-[100%] place-items-center justify-center gap-[20px]" data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
               
                 <li className='bg-[var(--primary-color)] p-[10px] rounded-[50%]'><NavLink href="#"><img className="w-[20px]" src="./assets/icons/icon_video_color.svg" alt="" /></NavLink></li>
                 <li className='bg-[var(--primary-color)] p-[10px] rounded-[50%]'><NavLink href="#"><img className="w-[20px]" src="./assets/icons/icon_facebook_color.svg" alt="" /></NavLink></li>
