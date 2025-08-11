@@ -19,7 +19,7 @@ const About=()=>{
         <Headings headings={<span>Step into Blue <span className="block"></span> Lagoon’s World</span>}/>
         <div className="container "  data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6">
                 <div className="lg:w-[60%] relative py-[30px] mt-[30px] m-auto">
-                <video         ref={videoRef}  width="320" className="w-[100%]    shadow-custom rounded-[10px] lg:rounded-[20px]" height="200"  pplaysinline webkit-playsinline muted autoplay loop>
+                <video src="assets/video/about_video.mp4"    ref={videoRef}  width="320" className="w-[100%]    shadow-custom rounded-[10px] lg:rounded-[20px]" height="200"  playsInline  webkit-playsInline  muted autoPlay loop>
                
             </video>
             <button
