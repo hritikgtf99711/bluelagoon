@@ -10,6 +10,7 @@ import Form_sec from "../component/Home/Form_sec";
 import Typology from "../component/Home/Typology";
 import About from "../component/Home/About";
 import { Suspense } from "react";
+import Footer from "../component/Footer";
 const Home = () => {
     return <>
             <Suspense fallback={<h1>Loading Banner</h1>}>

@@ -4,6 +4,7 @@ import Banner from "../component/About/Banner";
 import AboutContent from "../component/About/AboutContent";
 import { Suspense } from "react";
 import FounderSec from "../component/About/FounderSec";
+import Footer from "../component/Footer";
 const About = () => {
     return <>
             <Suspense fallback={<h1>Banner</h1>}>
