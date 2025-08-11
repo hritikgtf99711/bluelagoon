@@ -24,9 +24,8 @@ export default function Form() {
       }
 
       const result = await response.json();
-      navigate("/thankyou")
-      reset(); // Clear form after successful submission
-
+      navigate(import.meta.env.VITE_BASE_URL+"thankyou")
+      reset(); 
     } catch (error) {
       console.error('Error submitting form:', error);
       alert('Failed to send email. Please try again.');

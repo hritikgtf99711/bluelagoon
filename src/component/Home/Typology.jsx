@@ -4,7 +4,7 @@ const Typology = () => {
     <section className="bg-[url('/assets/images/home/typology/typology-banner.jpg')] bg-[cover] py-[80px] pb-[70px]">
       <div className="heading_container text-center mb-[20px]">
         <img
-          src="/assets/icons/icon_design_secondary.svg"
+          src="assets/icons/icon_design_secondary.svg"
           className="m-auto mb-[20px]"
           data-gsap="fade-up"
           data-gsap-duration="1"

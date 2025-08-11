@@ -6,14 +6,15 @@ import About from "./pages/About";
 import Thankyou from "./pages/Thankyou";
 import Disclaimer from "./pages/Disclaimer";
 function App() {
+
+
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path={import.meta.env.VITE_BASE_URL} element={<Layout />}>
         <Route path="" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/thankyou" element={<Thankyou />} />
-        <Route path="/disclaimer" element={<Disclaimer />} />
-        {/* <Route path='' element={<Home />} />  */}
+        <Route path={import.meta.env.VITE_BASE_URL+"about"} element={<About />} />
+        <Route path={import.meta.env.VITE_BASE_URL+"thankyou"} element={<Thankyou />} />
+        <Route path={import.meta.env.VITE_BASE_URL+"disclaimer"} element={<Disclaimer />} />
       </Route>
     </Routes>
   );

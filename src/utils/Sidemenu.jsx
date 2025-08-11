@@ -18,8 +18,8 @@ export default function Sidemenu({onClick,openSideMenu,setopenSideMenu}) {
               </svg>
             </button>
         <ul >
-              <li className='border-b-[1px] border-[#2351622b] px-[20px] py-[20px] text-[16px]'><NavLink className='text-[var(--primary-color)]  text-[18px]'  to={'/'}>Home </NavLink></li>
-             <li className='border-b-[1px] border-[#2351622b] px-[20px] py-[20px] text-[16px]'><NavLink className='text-[var(--primary-color)]  text-[18px]'  to={'/about'}>About Us </NavLink></li>
+              <li className='border-b-[1px] border-[#2351622b] px-[20px] py-[20px] text-[16px]'><NavLink className='text-[var(--primary-color)]  text-[18px]'  to={import.meta.env.VITE_BASE_URL}>Home </NavLink></li>
+             <li className='border-b-[1px] border-[#2351622b] px-[20px] py-[20px] text-[16px]'><NavLink className='text-[var(--primary-color)]  text-[18px]'  to={'about'}>About Us </NavLink></li>
               <li className='border-b-[1px] border-[#2351622b] px-[20px] py-[20px] text-[16px]'><NavLink className='text-[var(--primary-color)]  text-[18px]'  onClick={onClick} to={'#'}> Contact us </NavLink></li>
         </ul>
        

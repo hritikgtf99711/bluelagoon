@@ -105,7 +105,7 @@ export default function About() {
           <div className='relative lg:rounded-br-[10px] rounded-[10px] lg:rounded-tr-[10px]  overflow-hidden'>
             
            <img
-            src="/assets/images/home/about/about_1.webp"
+            src="assets/images/home/about/about_1.webp"
             className="mx-auto h-[400px]   w-[100%] object-cover lg:mt-[400px] max-w-full"
             alt="About_1 design"
             ref={(el) => (rightImagesRef.current[0] = el)}
@@ -114,7 +114,7 @@ export default function About() {
           </div>
           <div className='relative relative lg:rounded-br-[10px] rounded-[10px] lg:rounded-tr-[10px]  overflow-hidden'>
           <img
-            src="/assets/images/home/about/about_3.webp"
+            src="assets/images/home/about/about_3.webp"
             className="mx-auto h-[400px] w-[100%]  object-cover lg:mt-[450px] max-w-full"
             alt="About_1 design"
             ref={(el) => (rightImagesRef.current[1] = el)}
@@ -126,7 +126,7 @@ export default function About() {
         <div className="col-span-6 lg:my-0 my-[20px] text-center" ref={stickyRef}>
           <div className="lg:mb-12  " ref={contentRef}>
             <img
-              src="/assets/icons/icon_design.svg"
+              src="assets/icons/icon_design.svg"
               className="mx-auto"
               alt="icon design"
             />
@@ -172,7 +172,7 @@ export default function About() {
         <div className="col-span lg:col-span-3  lg:block hidden flex flex-col gap-4">
          <div className='relative lg:rounded-bl-[10px] rounded-[10px]  lg:rounded-tl-[10px] overflow-hidden'>
           <img
-            src="/assets/images/home/about/about_2.webp"
+            src="assets/images/home/about/about_2.webp"
             className="mx-auto h-[400px] w-[100%]  object-cover max-w-full"
             alt="About_2 design"
             ref={(el) => (leftImagesRef.current[0] = el)}
@@ -181,7 +181,7 @@ export default function About() {
           </div>
               <div className='relative lg:rounded-bl-[10px] rounded-[10px]  lg:rounded-tl-[10px] overflow-hidden'>
           <img
-            src="/assets/images/home/about/about_4.webp"
+            src="assets/images/home/about/about_4.webp"
             className="mx-auto h-[400px] object-cover l w-[100%] max-w-full lg:mt-[300px]"
             alt="About_2 design"
             ref={(el) => (leftImagesRef.current[1] = el)}

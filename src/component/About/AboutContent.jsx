@@ -12,7 +12,7 @@ export default function AboutContent() {
         />
         <div className="container">
         <figure className="mb-[30px] flex justify-center">
-          <img src="/assets/images/about/globe.png" alt="img" />
+          <img src="assets/images/about/globe.png" alt="img" />
         </figure>{" "}
         <div className="lg:w-[70%]  m-[auto]">
           <Headings
@@ -71,7 +71,7 @@ export default function AboutContent() {
    
       <figure className="mt-[50px]"  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
         <img
-          src="/assets/images/about/map.jpg"
+          src="assets/images/about/map.jpg"
           className="object-cover w-[100vw]"
           alt="map"
         />

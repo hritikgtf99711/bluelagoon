@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 export default function Footer({ openModal }) {
-  const location=useNavigate();
+  const location = useNavigate();
   return (
     <footer className="bg-[var(--primary-color)] text-white text-center pt-[80px]">
       <div className="container">
@@ -10,7 +10,7 @@ export default function Footer({ openModal }) {
           <div className="relative">
             <div className="h-[1px] w-[120px] absolute right-[200px] lg:right-[180px] top-[13px] lg:top-[30px]     bg-gradient-to-r to-gray-200 from-teal-70"></div>
             <img
-              src="/assets/icons/logo-white.svg"
+              src="assets/icons/logo-white.svg"
               className="m-[auto] lg:w-[auto] w-[180px]"
               alt="icon"
             />
@@ -21,12 +21,12 @@ export default function Footer({ openModal }) {
             <ul className="flex justify-center my-[20px]" data-gsap="fade-up">
               <li>
                 <a
-                 onClick={() =>{ 
-                location("/");
-                setTimeout(()=>{
-                 window.scrollTo(0, 0)
-                },200)
-              }}
+                  onClick={() => {
+                    location(import.meta.env.VITE_BASE_URL);
+                    setTimeout(() => {
+                      window.scrollTo(0, 0);
+                    }, 200);
+                  }}
                   href="javascript:void(0)"
                   className="text-white uppercase lg:text-[14px] text-[13px] font-[500] me-[65px]"
                 >
@@ -36,13 +36,13 @@ export default function Footer({ openModal }) {
 
               <li>
                 <a
-                  onClick={() =>{ 
-                location("/about");
-                setTimeout(()=>{
-                 window.scrollTo(0, 0)
-                },200)
-              }}
-                 
+                  onClick={() => {
+                    location("about");
+                    setTimeout(() => {
+                      window.scrollTo(0, 0);
+                    }, 200);
+                  }}
+                  href="javascript:void(0)"
                   className="text-white uppercase lg:text-[14px] text-[13px] font-[500] me-[65px]"
                 >
                   about us
@@ -88,24 +88,21 @@ export default function Footer({ openModal }) {
             <a
               href="javascript:void(0)"
               className="font-manrope"
-              onClick={() =>{ 
-                
-
-                location("/disclaimer");
-                setTimeout(()=>{
-                                window.scrollTo(0, 0)
-
-                },200)
-
+              onClick={() => {
+                location("disclaimer");
+                setTimeout(() => {
+                  window.scrollTo(0, 0);
+                }, 200);
               }}
             >
               Disclaimer & Privacy Policy
             </a>
-           <span className="inline-block mx-[5px]">|</span>  Copyright ©Blue lagoon 2025
+            <span className="inline-block mx-[5px]">|</span> Copyright ©Blue
+            lagoon 2025
           </li>
           <li className="font-manrope text-[10px] lg:flex tracking-[0.5px] lg:text-[14px]">
-            All Rights Reserved  <span className="inline-block mx-[5px]">|</span>
-             <a href="" className="font-manrope ml-[3px]" target="_blank">
+            All Rights Reserved <span className="inline-block mx-[5px]">|</span>
+            <a href="" className="font-manrope ml-[3px]" target="_blank">
               Crafted by GTF Technologies
             </a>
           </li>
