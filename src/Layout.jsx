@@ -7,18 +7,19 @@ import { Outlet } from 'react-router';
 import Footer from './component/Footer';
 import FormModal from './utils/FormModal';
 import { setupGsapAnimations } from './utils/SetupGsapAnimation';
-
+import { useLocation } from 'react-router';
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const smootherRef = useRef(null);
   const containerRef = useRef(null);
+  const location=useLocation();
 
   useEffect(() => {
     const cleanup = setupGsapAnimations(containerRef.current);
     return cleanup;
-  }, []);
+  }, [location.pathname]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;

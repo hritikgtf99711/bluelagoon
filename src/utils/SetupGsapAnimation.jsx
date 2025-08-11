@@ -1,11 +1,12 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import { useLocation } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 
 export const setupGsapAnimations = (container = document) => {
   // Find all elements with data-gsap attribute within the specified container
   const elements = container.querySelectorAll('[data-gsap]');
+  const location=useLocation();
   const scrollTriggers = [];
 
   elements.forEach((element) => {
