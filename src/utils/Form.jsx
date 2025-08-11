@@ -16,7 +16,6 @@ export default function Form() {
         headers: {
           'Content-Type': 'application/json',
         },
-          rejectUnauthorized: false, // risky
         body: JSON.stringify({ name, email, phone, comments })
       });
 
@@ -25,8 +24,7 @@ export default function Form() {
       }
 
       const result = await response.json();
-      navigate("/thankyouy")
-      // alert('Email sent successfully!');
+      navigate("/thankyou")
       reset(); // Clear form after successful submission
 
     } catch (error) {
