@@ -1,5 +1,6 @@
 import React from "react";
 import Headings from "../../utils/Headings";
+import AboutCounter from "./AboutCounter";
 export default function AboutContent() {
   return (
     <>
@@ -41,20 +42,7 @@ export default function AboutContent() {
             industry standards.
           </p>
           
-           <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] relative mt-[40px]">
-        <div  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-            <h3 className="text-[var(--primary-color)] text-[30px] font-[500]">37+</h3>
-            <span className="text-[var(--primary-color)]">Years of <span className="block"></span> Experience</span>
-        </div>
-         <div  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-            <h3 className="text-[var(--primary-color)] text-[30px] font-[500]">31+</h3>
-            <span className="text-[var(--primary-color)]">Projects Completed in <span className="block"></span>Last 10 Years</span>
-        </div>
-         <div  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-            <h3 className="text-[var(--primary-color)] text-[30px] font-[500]">22+</h3>
-            <span className="text-[var(--primary-color)]">Active <span className="block"></span>Projects</span>
-        </div>
-      </div>
+           <AboutCounter/>
       
          <div className="grid  grid-cols-1 lg:grid-cols-3 gap-[30px] mt-[50px] relative">
         <div  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">

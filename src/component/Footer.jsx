@@ -20,21 +20,33 @@ export default function Footer({ openModal }) {
             <div className="h-[1px] w-[100%] line-gradient"></div>
             <ul className="flex justify-center my-[20px]" data-gsap="fade-up">
               <li>
-                <NavLink
-                  to="/"
+                <a
+                 onClick={() =>{ 
+                location("/");
+                setTimeout(()=>{
+                 window.scrollTo(0, 0)
+                },200)
+              }}
+                  href="javascript:void(0)"
                   className="text-white uppercase lg:text-[14px] text-[13px] font-[500] me-[65px]"
                 >
                   Home
-                </NavLink>
+                </a>
               </li>
 
               <li>
-                <NavLink
-                  to="/about"
+                <a
+                  onClick={() =>{ 
+                location("/about");
+                setTimeout(()=>{
+                 window.scrollTo(0, 0)
+                },200)
+              }}
+                 
                   className="text-white uppercase lg:text-[14px] text-[13px] font-[500] me-[65px]"
                 >
                   about us
-                </NavLink>
+                </a>
               </li>
               <li>
                 <a

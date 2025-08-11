@@ -10,7 +10,7 @@ const Banner = () => {
           : "bg-[url('/assets/images/home/banner.webp')]"
       } banner_sec bg-cover bg-no-repeat bg-[bottom] relative h-[70vh] lg:h-screen w-screen`}
     >
-        <div className="image_overlay absolute top-0 left-0 h-[100%] w-[100%] bg-[#00000042]"></div>
+        <div className="image_overlay absolute top-0  lg:block hidden left-0 h-[100%] w-[100%] bg-[#00000042]"></div>
       <div className="container lg:block flex flex-col place-items-center  justify-center relative z-[1] h-[100%]">
         <h1
           class="lg:absolute xl:top-[26%] heading-text tracking-[2px] text-[38px] leading-[1.3] uppercase text-center left-[25%] lg:translate-[-50%] font-[600] "
