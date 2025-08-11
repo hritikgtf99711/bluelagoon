@@ -23,8 +23,7 @@ const About=()=>{
         loop
         autoPlay
         muted>
-                <source src="assets/video/about_video.mp4" type="video/mp4"/>
-                Your browser does not support the video tag.
+               
             </video>
             <button
         onClick={toggleMute}
