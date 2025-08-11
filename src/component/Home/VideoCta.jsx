@@ -8,10 +8,7 @@ export default function VideoCta() {
       <video
         src="assets/video/cta_video.mp4"
         className="w-[100%] h-[100%] absolute top-0 object-cover"
-        playsInline
-        loop
-        autoPlay
-        muted
+       playsinline webkit-playsinline muted autoplay loop
       >
         Your browser does not support the video tag.
       </video>

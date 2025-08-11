@@ -11,12 +11,12 @@ export default function Form() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://queryapi.gtftech.com/send-mail-direct.php', {
+      const response = await fetch('https://bluelagoon.mv/sendMail.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email, phone, comments })
+        body: JSON.stringify({ name, email, phone, comments,client:'bluelagoon' })
       });
 
       if (!response.ok) {
@@ -110,16 +110,16 @@ export default function Form() {
               cols='1'
               rows='1'
               className='py-[30px] outline-none w-[100%] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px] resize-none'
-              placeholder='Comments'
-              {...register('comments', { 
-                required: 'Comments are required',
+              placeholder='message'
+              {...register('message', { 
+                required: 'message are required',
                 minLength: {
                   value: 10,
-                  message: 'Comments must be at least 10 characters'
+                  message: 'message must be at least 10 characters'
                 },
                 maxLength: {
                   value: 500,
-                  message: 'Comments cannot exceed 500 characters'
+                  message: 'message cannot exceed 500 characters'
                 }
               })}
             ></textarea>
