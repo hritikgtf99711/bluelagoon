@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Headings from "../../utils/Headings";
 import AboutCounter from "./AboutCounter";
+import { useOutletContext } from "react-router-dom";
 export default function AboutContent() {
+   const { openModal} = useOutletContext();
+
+
   return (
     <>
       <div className=" py-[80px] relative flex flex-col justify-center items-center h-[100%]">
@@ -44,26 +48,31 @@ export default function AboutContent() {
           
            <AboutCounter/>
       
-         <div className="grid  grid-cols-1 lg:grid-cols-3 gap-[30px] mt-[50px] relative">
-        <div  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-      <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Brochure</button>
-      </div>
-       <div   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-      <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Floor plans</button>
-      </div>
-       <div   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-      <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Cost sheet</button>
-      </div>
-       <div   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-      <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Payment Schedule</button>
-      </div>
-       <div   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-      <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Finishing Schedule</button>
-      </div>
-   <div   data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6" className="col-span text-center">
-    <button class="lg:text-[14px] text-[14px] mx-[auto] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]">Application form</button>
-      </div>
-      </div>
+           <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] mt-[50px] relative">
+                {[
+                  { key: "brochure", label: "Brochure" },
+                  { key: "floorplans", label: "Floor plans" },
+                  { key: "costsheet", label: "Cost sheet" },
+                  { key: "paymentschedule", label: "Payment Schedule" },
+                  { key: "finishingschedule", label: "Finishing Schedule" },
+                  { key: "applicationform", label: "Application form" },
+                ].map(({ key, label }) => (
+                  <div
+                    key={key}
+                    data-gsap="fade-up"
+                    data-gsap-duration="1"
+                    data-gsap-delay="0.6"
+                    className="col-span text-center"
+                  >
+                    <button
+                      onClick={() => openModal(key)}
+                      className="lg:text-[14px] text-[14px] mx-auto bg-[var(--primary-color)] book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]"
+                    >
+                      {label}
+                    </button>
+                  </div>
+                ))}
+              </div>
         </div>
 </div>
       </div>

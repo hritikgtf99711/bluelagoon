@@ -1,39 +1,60 @@
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
-export default function Form({setIsOpen}) {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+
+export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   const onInfo = async (data) => {
     const { name, email, phone, comments } = data;
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://bluelagoon.mv/sendMail.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, phone, comments,client:'bluelagoon' })
+      const response = await fetch("https://bluelagoon.mv/sendMail.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, comments, client: "bluelagoon" }),
       });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const result = await response.json();
-      navigate(import.meta.env.VITE_BASE_URL+"thankyou");
-      setIsOpen(false)
-      reset(); 
+      await response.json();
+
+      downloadPdf();
+
+      navigate(import.meta.env.VITE_BASE_URL + "thankyou");
+
+      setIsOpen(false);
+      reset();
     } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('Failed to send email. Please try again.');
+      console.error("Error submitting form:", error);
+      alert("Failed to send email. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
   };
+
+  const downloadPdf = () => {
+    if (!selectedPdf) return;
+    const link = document.createElement("a");
+    link.href = selectedPdf;
+    link.download = selectedPdf.split("/").pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+ 
 
   return (
     <div className='relative overflow-hidden'>
@@ -131,7 +152,7 @@ export default function Form({setIsOpen}) {
 
           <button
             type='submit'
-            disabled={isSubmitting}
+            onClick={downloadPdf()}
             className='bg-[var(--primary-color)] uppercase w-[100%] text-white mt-[40px] py-[15px] hover:opacity-90 transition-opacity disabled:opacity-50'
           >
             {isSubmitting ? 'Sending...' : 'Submit Now'}
