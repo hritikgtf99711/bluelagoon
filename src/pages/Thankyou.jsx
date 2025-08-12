@@ -12,7 +12,7 @@ export default function Thankyou() {
             Our professional shall get in touch with you within two working
             hours. Stay with us.
           </p>
-          <NavLink to="/" className="inline-block lg:text-[14px] text-[14px] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase mx-[20px] my-[30px] m-[auto]   lg:px-8 lg:py-3 px-[30px] py-[10px]">Book to Home</NavLink>
+          <NavLink to={import.meta.env.VITE_BASE_URL} className="inline-block lg:text-[14px] text-[14px] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase mx-[20px] my-[30px] m-[auto]   lg:px-8 lg:py-3 px-[30px] py-[10px]">Book to Home</NavLink>
         </div>
       </div>
     </section>

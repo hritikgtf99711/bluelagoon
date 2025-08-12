@@ -11,8 +11,7 @@ export default function AboutCounter() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setTriggerEnabled(true);
-    }, 2000); // ⏱️ Wait 2s after page load
-
+    }, 2000); 
     return () => clearTimeout(timeout);
   }, []);
 
