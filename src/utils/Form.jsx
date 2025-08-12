@@ -14,7 +14,7 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
   const navigate = useNavigate();
 
   const onInfo = async (data) => {
-    const { name, email, phone, comments } = data;
+    const { name, email, phone, comments, consent } = data;
     setIsSubmitting(true);
 
     try {
@@ -54,8 +54,6 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
     document.body.removeChild(link);
   };
 
- 
-
   return (
     <div className='relative overflow-hidden'>
       <div className='relative px-[30px] py-[40px] border-[4px] border-[var(--primary-color)]'>
@@ -83,7 +81,7 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
               })}
             />
             {errors.name && (
-              <p className='text-red-500 text-[10px] font-manrope mt-1'>{errors.name.message}</p>
+              <p className='text-red-500 !text-[12px] font-manrope mt-1'>{errors.name.message}</p>
             )}
           </div>
 
@@ -101,7 +99,7 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
               })}
             />
             {errors.email && (
-              <p className='text-red-500 text-[10px] font-manrope mt-1'>{errors.email.message}</p>
+              <p className='text-red-500 !text-[12px] font-manrope mt-1'>{errors.email.message}</p>
             )}
           </div>
 
@@ -123,7 +121,7 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
               })}
             />
             {errors.phone && (
-              <p className='text-red-500 text-[10px] font-manrope mt-1'>{errors.phone.message}</p>
+              <p className='text-red-500 !text-[12px] font-manrope mt-1'>{errors.phone.message}</p>
             )}
           </div>
 
@@ -134,26 +132,44 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
               className='py-[30px] outline-none w-[100%] border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px] resize-none'
               placeholder='message'
               {...register('message', { 
-                required: 'message are required',
+                required: 'Message is required',
                 minLength: {
-                  value: 10,
-                  message: 'message must be at least 10 characters'
+                  // value: 10,
+                  message: 'Message must be at least 10 characters'
                 },
                 maxLength: {
                   value: 500,
-                  message: 'message cannot exceed 500 characters'
+                  message: 'Message cannot exceed 500 characters'
                 }
               })}
             ></textarea>
-            {errors.comments && (
-              <p className='text-red-500 text-[10px] font-manrope mt-1'>{errors.comments.message}</p>
+            {errors.message && (
+              <p className='text-red-500 !text-[12px] font-manrope mt-1'>{errors.message.message}</p>
+            )}
+          </div>
+
+          <div className='mt-[15px]'>
+            <label className='flex items-start'>
+              <input
+                type='checkbox'
+                className='mr-[10px] mt-[5px]'
+                {...register('consent', {
+                  required: 'You must authorize communication to proceed',
+                })}
+              />
+              <span className='text-[11px] font-manrope'>
+                I authorize company representatives to Call, SMS, Email, or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.
+              </span>
+            </label>
+            {errors.consent && (
+              <p className='text-red-500 !text-[12px] font-manrope mt-1'>{errors.consent.message}</p>
             )}
           </div>
 
           <button
             type='submit'
-            onClick={downloadPdf()}
             className='bg-[var(--primary-color)] uppercase w-[100%] text-white mt-[40px] py-[15px] hover:opacity-90 transition-opacity disabled:opacity-50'
+            disabled={isSubmitting}
           >
             {isSubmitting ? 'Sending...' : 'Submit Now'}
           </button>

@@ -9,7 +9,7 @@ export default function Header({openModal}) {
 
   useEffect(() => {
     const handleScroll = () => {
-       if(nav.pathname==import.meta.env.VITE_BASE_URL || nav.pathname==import.meta.env.VITE_BASE_URL+"/about"){
+       if(nav.pathname==import.meta.env.VITE_BASE_URL || nav.pathname==import.meta.env.VITE_BASE_URL+"about"){
       if (window.scrollY > 100) {
         setActive(true);
       } else {
