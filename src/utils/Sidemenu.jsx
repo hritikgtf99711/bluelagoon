@@ -2,6 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 export default function Sidemenu({ onClick, openSideMenu, setopenSideMenu }) {
   return (
+    <>
+          <div className={`fixed top-0 ${  openSideMenu ? "block" : "hidden"} left-0 h-[100%] w-[100%] bg-[transparent]`} onClick={()=>setopenSideMenu(false)}></div>
+
     <div
       className={`h-[100vh] transition-all duration-300 ease-in-out ${
         openSideMenu ? "translate-x-[0%]" : "translate-x-[100%]"
@@ -86,5 +89,6 @@ export default function Sidemenu({ onClick, openSideMenu, setopenSideMenu }) {
         </ul>
       </div>
     </div>
+    </>
   );
 }
