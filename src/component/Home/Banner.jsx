@@ -36,22 +36,22 @@ const Banner = () => {
           data-gsap-delay="0.6"
         >
           <li className="my-[35px]">
-            <Link href="#">
+            <a target="_blank" href="https://www.instagram.com/vcilmauritius?utm_source=qr&igsh=OThnNnZ2dHgzdXd4">
               <img
                 className="w-[20px]"
                 src="./assets/icons/icon_video.svg"
                 alt=""
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="#">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61579439157253&mibextid=ZbWKwL">
               <img
                 className="w-[20px]"
                 src="./assets/icons/icon_facebook.svg"
                 alt=""
               />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

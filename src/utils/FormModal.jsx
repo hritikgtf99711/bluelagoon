@@ -8,7 +8,7 @@ const FormModal = ({isOpen, setIsOpen,closeModal}) => {
      
 
     
-        <div className="fixed inset-0 bg-[#1f15156b] bg-opacity-50  px-[10px]  z-[9999] flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-[#1f15156b] bg-opacity-50  px-[15px]  z-[9999] flex items-center justify-center z-50">
           <div className="bg-[var(--secondary-color)]  max-w-md w-full p-6 relative">
             <img
                 src={"/assets/images/colored-logo.svg"}

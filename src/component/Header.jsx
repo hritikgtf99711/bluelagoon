@@ -56,7 +56,7 @@ setopenSideMenu(false);
             <ul className={`menu__list flex gap-[30px] uppercase ml-[auto] me-[30px] tracking-[2px]`}>
                <li><NavLink className='text-white lg:block hidden text-[14px]'  to={import.meta.env.VITE_BASE_URL}>Home </NavLink></li>
               <li><NavLink className='text-white lg:block hidden text-[14px]'  to={'about'}>About Us </NavLink></li>
-              <li><NavLink className='text-white lg:block hidden text-[14px]'  onClick={openModal} to={'#'}> Contact us </NavLink></li>
+            
             </ul>
             <button
             onClick={openModal}

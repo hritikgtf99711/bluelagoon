@@ -20,6 +20,7 @@ export default function AboutContent() {
         </figure>{" "}
         <div className="lg:w-[70%]  m-[auto]">
           <Headings
+           classNames="lg:text-[32px] !text-[20px]"
             headings={
               <span>A PROJECT BY <span className="lg:block"></span> VARENDERA CONSTRUCTIONS <span className="lg:block"></span> INTERNATIONAL LIMITED</span>
             }
@@ -48,7 +49,7 @@ export default function AboutContent() {
           
            <AboutCounter/>
       
-           <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] mt-[50px] relative">
+           <div className="grid grid-cols-2 lg:grid-cols-3 gap-[5px] lg:gap-[30px] mt-[50px] relative">
                 {[
                   { key: "brochure", label: "Brochure" },
                   { key: "floorplans", label: "Floor plans" },
@@ -66,7 +67,7 @@ export default function AboutContent() {
                   >
                     <button
                       onClick={() => openModal(key)}
-                      className="lg:text-[14px] text-[14px] mx-auto bg-[var(--primary-color)] book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 px-[35px] py-[15px]"
+                      className="lg:text-[14px] text-[10px] lg:w-[auto] w-[100%] mx-auto bg-[var(--primary-color)] book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 lg:px-[35px] py-[15px]"
                     >
                       {label}
                     </button>
@@ -78,7 +79,7 @@ export default function AboutContent() {
       </div>
       </div>
    
-      <figure className="mt-[50px]"  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
+      <figure className="lg:mt-[50px]"  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
         <img
           src="assets/images/about/map.jpg"
           className="object-cover w-[100vw]"
