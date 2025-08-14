@@ -5,11 +5,17 @@ export default function VideoCta() {
 
   return (
     <section className=" relative ">
-   
-
-         <video src="assets/video/cta_video.mp4"     width="320"    className="w-[100%] h-[100%] absolute top-0 object-cover"  height="200"  playsInline  webkit-playsInline  muted autoPlay loop>
-               
-            </video>
+      <video
+        src="assets/video/cta_video.mp4"
+        width="320"
+        className="w-[100%] h-[100%] absolute top-0 object-cover"
+        height="200"
+        playsInline
+        webkit-playsInline
+        muted
+        autoPlay
+        loop
+      ></video>
       <div className=" mx-[auto]  bg-[linear-gradient(0deg,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.6)_100%)] py-[120px] h-[100%] w-[100%] text-white relative text-center ">
         <div className="m-[auto]">
           <h2
