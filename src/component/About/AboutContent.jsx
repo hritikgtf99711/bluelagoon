@@ -16,11 +16,11 @@ export default function AboutContent() {
         />
         <div className="container">
         <figure className="mb-[30px] flex justify-center">
-          <img src="assets/images/about/globe.png" alt="img" />
+          <img src="/assets/images/about/globe.png" alt="img" />
         </figure>{" "}
         <div className="lg:w-[70%]  m-[auto]">
           <Headings
-           classNames="lg:text-[32px] !text-[20px]"
+           classNames="lg:!text-[32px] !text-[20px]"
             headings={
               <span>A PROJECT BY <span className="lg:block"></span> VARENDERA CONSTRUCTIONS <span className="lg:block"></span> INTERNATIONAL LIMITED</span>
             }
@@ -49,31 +49,7 @@ export default function AboutContent() {
           
            <AboutCounter/>
       
-           <div className="grid grid-cols-2 lg:grid-cols-3 gap-[5px] lg:gap-[30px] mt-[50px] relative">
-                {[
-                  { key: "brochure", label: "Brochure" },
-                  { key: "floorplans", label: "Floor plans" },
-                  { key: "costsheet", label: "Cost sheet" },
-                  { key: "paymentschedule", label: "Payment Schedule" },
-                  { key: "finishingschedule", label: "Finishing Schedule" },
-                  { key: "applicationform", label: "Application form" },
-                ].map(({ key, label }) => (
-                  <div
-                    key={key}
-                    data-gsap="fade-up"
-                    data-gsap-duration="1"
-                    data-gsap-delay="0.6"
-                    className="col-span text-center"
-                  >
-                    <button
-                      onClick={() => openModal(key)}
-                      className="lg:text-[14px] text-[10px] lg:w-[auto] w-[100%] mx-auto bg-[var(--primary-color)] book_btn cursor-pointer tracking-[2px] text-white uppercase lg:px-8 lg:py-3 lg:px-[35px] py-[15px]"
-                    >
-                      {label}
-                    </button>
-                  </div>
-                ))}
-              </div>
+         
         </div>
 </div>
       </div>
@@ -81,7 +57,7 @@ export default function AboutContent() {
    
       <figure className="lg:mt-[50px]"  data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
         <img
-          src="assets/images/about/map.jpg"
+          src="/assets/images/about/map.jpg"
           className="object-cover w-[100vw]"
           alt="map"
         />

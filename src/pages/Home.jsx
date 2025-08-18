@@ -11,8 +11,14 @@ import Typology from "../component/Home/Typology";
 import About from "../component/Home/About";
 import { Suspense } from "react";
 import Footer from "../component/Footer";
+import Tabs from "../utils/Tabs";
+import { Helmet } from 'react-helmet-async';
+
 const Home = () => {
     return <>
+            <Helmet>
+                <link rel="canonical" href="https://bluelagoon.mv/" />
+            </Helmet>
             <Suspense fallback={<h1>Loading Banner</h1>}>
             <Banner />
             </Suspense>
@@ -41,11 +47,12 @@ const Home = () => {
             <Suspense fallback={<h1>Essential Features</h1>}>
               <Essential_Features/>
             </Suspense>
-             {/* <Suspense fallback={<h1>Floor Plan</h1>}>
-              <FloorPlan/>
-            </Suspense> */}
+             
             <Suspense fallback={<h1>Video CTA</h1>}>
               <VideoCta/>
+            </Suspense>
+            <Suspense fallback={<h1>Pdfs</h1>}>
+              <Tabs/>
             </Suspense>
             <Suspense fallback={<h1>Video CTA</h1>}>
               <Form_sec/>

@@ -44,7 +44,7 @@
             <section className="py-[80px] relative">
                 <div className="heading_container text-center mb-[20px]">
                     <img 
-                        src="assets/icons/icon_design.svg" 
+                        src="/assets/icons/icon_design.svg" 
                         className="m-auto" 
                         alt="icon design" 
                         data-gsap="fade-down" 
@@ -66,7 +66,7 @@
                     <div className="lg:col-span-6 col-span mb-[auto]">
                         <img 
                         ref={rightSectionRef}
-                            src="assets/images/home/project_highlights.png" 
+                            src="/assets/images/home/project_highlights.png" 
                             className="w-[100%] object-cover" 
                             data-gsap="clip-polygon" 
                             data-gsap-duration="1" 
@@ -84,7 +84,7 @@
                     >
                         <ul className="">
                             <li className="uppercase flex place-items-start mb-[45px]">
-                                <img src="assets/icons/1.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
+                                <img src="/assets/icons/1.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         One of the Largest Residential <span className="lg:block"></span>
@@ -97,7 +97,7 @@
                             </li>
                             
                             <li className="uppercase flex place-items-start mb-[45px]">
-                                <img src="assets/icons/2.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
+                                <img src="/assets/icons/2.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         Terrace Garden & Swimming Pool
@@ -109,7 +109,7 @@
                             </li>
                             
                             <li className="uppercase flex place-items-start mb-[45px]">
-                                <img src="assets/icons/3.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
+                                <img src="/assets/icons/3.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         Cross-Ventilated & Well-Lit Homes
@@ -121,7 +121,7 @@
                             </li>
                             
                             <li className="uppercase flex place-items-start mb-[45px]">
-                                <img src="assets/icons/4.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
+                                <img src="/assets/icons/4.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         EV Charging Infrastructure
@@ -133,7 +133,7 @@
                             </li>
                             
                             <li className="uppercase flex place-items-start mb-[45px]">
-                                <img src="assets/icons/5.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
+                                <img src="/assets/icons/5.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         Spacious Balcony Living
@@ -145,7 +145,7 @@
                             </li>
                             
                             <li className="uppercase flex place-items-start mb-[45px]">
-                                <img src="assets/icons/6.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
+                                <img src="/assets/icons/6.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         Expansive Clubhouse Amenities
@@ -157,7 +157,7 @@
                             </li>
                             
                             <li className="uppercase flex place-items-start mb-[35px]">
-                                <img src="assets/icons/7.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
+                                <img src="/assets/icons/7.png" alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         Grand Luxury Lobby
@@ -169,7 +169,7 @@
                             </li>
                             
                             <li className="uppercase flex place-items-start mb-[35px]">
-                                <img src="assets/icons/8.png" width={'45px'} alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
+                                <img src="/assets/icons/8.png" width={'45px'} alt="Building" className="me-[18px] mt-[5px] w-[40px]"/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         Efficient Vertical Mobility
@@ -181,7 +181,7 @@
                             </li>
                             
                             <li className="uppercase flex place-items-start mb-[35px]">
-                                <img src="assets/icons/9.png" alt="Premium Finishes Throughout" className="me-[18px] mt-[5px] w-[40px]" width={'45px'}/>
+                                <img src="/assets/icons/9.png" alt="Premium Finishes Throughout" className="me-[18px] mt-[5px] w-[40px]" width={'45px'}/>
                                 <div className="content">
                                     <h3 className="block font-[500] text-[16px] text-[var(--primary-color)] leading-[1.6]">
                                         Premium Finishes Throughout
@@ -205,7 +205,7 @@
                     </div>
                     
                     <img 
-                        src="assets/icons/coconut_blob.png" 
+                        src="/assets/icons/coconut_blob.png" 
                         className="absolute w-[180px] right-[0] lg:block hidden bottom-0 z-[-1] right-0" 
                         alt="" 
                     />

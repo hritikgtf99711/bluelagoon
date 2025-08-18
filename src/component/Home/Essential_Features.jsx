@@ -6,13 +6,13 @@ export default function Essential_Features() {
   return (
     <section className="relative overflow-hidden bg-[var(--primary-color)] py-[80px]">
       <img
-        src="assets/icons/layered_blob.svg"
+        src="/assets/icons/layered_blob.svg"
         className="absolute bottom-[-80px] left-0 w-full"
         alt="layered blob"
       />
       <div className="heading_container mb-[20px] text-center">
         <img
-          src="assets/icons/icon_design_secondary.svg"
+          src="/assets/icons/icon_design_secondary.svg"
           className="m-auto"
           alt="icon design"
           data-gsap="fade-up"
@@ -42,7 +42,7 @@ export default function Essential_Features() {
             <div className="cars_item group">
               <div className="relative overflow-hidden">
                 <img
-                  src="assets/images/home/essential/essential_1.webp"
+                  src="/assets/images/home/essential/essential_1.webp"
                   className="h-[280px] w-full object-cover transition-transform duration-1000 group-hover:scale-125 lg:h-auto"
                   data-gsap="clip-polygon"
                   data-gsap-duration="1"
@@ -65,7 +65,7 @@ export default function Essential_Features() {
             <div className="cars_item group">
               <div className="relative overflow-hidden">
                 <img
-                  src="assets/images/home/essential/essential_2.webp"
+                  src="/assets/images/home/essential/essential_2.webp"
                   className="h-[280px] w-full object-cover transition-transform duration-1000 group-hover:scale-125 lg:h-auto"
                   data-gsap="clip-polygon"
                   data-gsap-duration="1"
@@ -88,7 +88,7 @@ export default function Essential_Features() {
             <div className="cars_item group">
               <div className="relative overflow-hidden">
                 <img
-                  src="assets/images/home/essential/essential_3.webp"
+                  src="/assets/images/home/essential/essential_3.webp"
                   className="h-[280px] w-full object-cover transition-transform duration-1000 group-hover:scale-125 lg:h-auto"
                   data-gsap="clip-polygon"
                   data-gsap-duration="1"

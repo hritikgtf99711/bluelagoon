@@ -10,7 +10,7 @@ export default function Footer({ openModal }) {
           <div className="relative">
             <div className="h-[1px] w-[120px] absolute right-[200px] lg:right-[180px] top-[13px] lg:top-[30px]     bg-gradient-to-r to-gray-200 from-teal-70"></div>
             <img
-              src="assets/icons/logo-white.svg"
+              src="/assets/icons/logo-white.svg"
               className="m-[auto] lg:w-[auto] w-[180px]"
               alt="icon"
             />

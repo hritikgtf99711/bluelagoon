@@ -9,7 +9,7 @@ export default function Header({openModal}) {
 
   useEffect(() => {
     const handleScroll = () => {
-       if(nav.pathname==import.meta.env.VITE_BASE_URL || nav.pathname==import.meta.env.VITE_BASE_URL+"about"){
+       if(nav.pathname==import.meta.env.VITE_BASE_URL || nav.pathname==import.meta.env.VITE_BASE_URL+"about" || nav.pathname==import.meta.env.VITE_BASE_URL+"about/"){
       if (window.scrollY > 100) {
         setActive(true);
       } else {
@@ -18,7 +18,7 @@ export default function Header({openModal}) {
     }
     };
    
-    if(nav.pathname==import.meta.env.VITE_BASE_URL || nav.pathname==import.meta.env.VITE_BASE_URL+"about"){
+    if(nav.pathname==import.meta.env.VITE_BASE_URL || nav.pathname==import.meta.env.VITE_BASE_URL+"about" || nav.pathname==import.meta.env.VITE_BASE_URL+"about/"){
       setActive(false);
     }else{
       setActive(true);
@@ -47,7 +47,7 @@ setopenSideMenu(false);
             className='header__logo'
             >
               <img
-                src={"assets/images/logo.svg"}
+                src={"/assets/images/logo.svg"}
                 alt='logo'
                 width={'180'}
                 className='2xl:w-[180px] logo w-[130px] '
@@ -62,7 +62,7 @@ setopenSideMenu(false);
             onClick={openModal}
               className='lg:text-[14px] text-[14px] bg-[var(--primary-color)] text-[14px]  book_btn cursor-pointer tracking-[2px] text-white uppercase lg:block hidden lg:px-8 lg:py-3 px-[10px] py-[10px]'
             >Book a Meeting</button>
-            <img src='assets/icons/icon_ham_menu.svg' onClick={openSideMenu} alt='ham_menu' className='lg:hidden block' width={'60px'}/>
+            <img src='/assets/icons/icon_ham_menu.svg' onClick={openSideMenu} alt='ham_menu' className='lg:hidden block' width={'60px'}/>
           </div>
         </div>
                 <Sidemenu openSideMenu={openSideMenus} setopenSideMenu={setopenSideMenu}  onClick={openModal}/>

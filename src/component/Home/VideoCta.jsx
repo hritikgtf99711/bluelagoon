@@ -6,7 +6,7 @@ export default function VideoCta() {
   return (
     <section className=" relative ">
       <video
-        src="assets/video/cta_video.mp4"
+        src="/assets/video/cta_video.mp4"
         width="320"
         className="w-[100%] h-[100%] absolute top-0 object-cover"
         height="200"

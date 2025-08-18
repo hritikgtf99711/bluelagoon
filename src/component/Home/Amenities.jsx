@@ -18,7 +18,7 @@ export default function Amenities() {
     <section className="py-[80px]" >
       <div className="text-center mb-5">
         <img
-          src="assets/icons/icon_design.svg"
+          src="/assets/icons/icon_design.svg"
           className="mx-auto mb-5"
           alt="Design Icon"
           width="50"
@@ -29,7 +29,7 @@ export default function Amenities() {
       </div>
       <div className="container mx-auto">
         <img
-          src="assets/images/home/amenities/map.png"
+          src="/assets/images/home/amenities/map.png"
           className="w-[100%] my-[30px] lg:my-[50px]"
           data-gsap="clip-polygon" data-gsap-duration="1" data-gsap-delay="0.6"
           alt="Rooftop Amenities Map"

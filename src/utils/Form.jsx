@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
-export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
+export default function Form({ isOpen, setIsOpen, closeModal,selectedPdf }) {
   const {
     register,
     handleSubmit,
@@ -29,22 +30,23 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
       }
 
       await response.json();
-
-      downloadPdf();
-
+        if(selectedPdf){
+           downloadPdf();
+   }
       navigate(import.meta.env.VITE_BASE_URL + "thankyou");
 
       setIsOpen(false);
       reset();
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("Failed to send email. Please try again.");
+      console.error("Failed to send email. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
   };
 
   const downloadPdf = () => {
+    console.log(selectedPdf)
     if (!selectedPdf) return;
     const link = document.createElement("a");
     link.href = selectedPdf;
@@ -55,7 +57,9 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
   };
 
   return (
-    <div className='relative overflow-hidden'>
+    <>
+    {/* <button onClick={downloadPdf}>Donwload</button> */}
+    <div className='relative form_sec overflow-hidden'>
       <div className='relative px-[30px] py-[40px] border-[4px] border-[var(--primary-color)]'>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute top-[-14px] right-[-20px] border-l-[4px] border-b-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute top-[-14px] left-[-20px] border-r-[4px] border-b-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
@@ -64,6 +68,7 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
         
         <form onSubmit={handleSubmit(onInfo)}>
           <div>
+
             <input
               className='py-[15px] w-[100%] placeholder:font-[500] outline-none border-b-[1px] border-[rgba(35, 81, 98, 0.60)] px-[12px]'
               type='text'
@@ -152,7 +157,7 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
             <label className='flex items-start'>
               <input
                 type='checkbox'
-                className='mr-[10px] mt-[5px]'
+                className='!mr-[10px] !mt-[5px]'
                 {...register('consent', {
                   required: 'You must authorize communication to proceed',
                 })}
@@ -168,13 +173,15 @@ export default function Form({ isOpen, setIsOpen, closeModal, selectedPdf }) {
 
           <button
             type='submit'
-            className='bg-[var(--primary-color)] uppercase w-[100%] text-white mt-[40px] py-[15px] hover:opacity-90 transition-opacity disabled:opacity-50'
+            className='bg-[var(--primary-color)] cursor-pointer uppercase w-[100%] text-white mt-[40px] py-[15px] hover:opacity-90 transition-opacity disabled:opacity-50'
             disabled={isSubmitting}
           >
             {isSubmitting ? 'Sending...' : 'Submit Now'}
           </button>
         </form>
       </div>
+      
     </div>
+    </>
   );
 }

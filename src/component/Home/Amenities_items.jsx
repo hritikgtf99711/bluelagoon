@@ -82,7 +82,7 @@ const AmenityItem = () => (
       <div className="lg:pb-10">
         <img
         data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6"
-          src="assets/icons/icon_design.svg"
+          src="/assets/icons/icon_design.svg"
           className="mb-4"
           alt="Design Icon"
           width="40"

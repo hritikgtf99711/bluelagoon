@@ -5,8 +5,12 @@ import AboutContent from "../component/About/AboutContent";
 import { Suspense } from "react";
 import FounderSec from "../component/About/FounderSec";
 import Footer from "../component/Footer";
+import { Helmet } from 'react-helmet-async';
 const About = () => {
     return <>
+            <Helmet>
+                <link rel="canonical" href="https://bluelagoon.mv/about/" />
+            </Helmet>
             <Suspense fallback={<h1>Banner</h1>}>
                 <Banner/>
             </Suspense>

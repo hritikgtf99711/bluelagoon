@@ -57,13 +57,13 @@ export default function FloorPlan() {
         `}
       </style>
       <img
-        src="assets/icons/layered_blob.svg"
+        src="/assets/icons/layered_blob.svg"
         className="absolute bottom-[-80px] left-0 w-full"
         alt="Decorative layered blob"
       />
       <div className="heading-container text-center">
         <img
-          src="assets/icons/icon_design.svg"
+          src="/assets/icons/icon_design.svg"
           className="mx-auto mb-4"
           alt="Design icon"
           width="40"
@@ -127,12 +127,12 @@ export default function FloorPlan() {
           </div>
           <div className="arrow-container flex gap-8">
             <img
-              src="assets/icons/arrow-right.svg"
+              src="/assets/icons/arrow-right.svg"
               className="prev_arrow w-10 h-10 cursor-pointer"
               alt="Previous slide"
             />
             <img
-              src="assets/icons/arrow-left.svg"
+              src="/assets/icons/arrow-left.svg"
               className="next_arrow w-10 h-10 cursor-pointer"
               alt="Next slide"
             />

@@ -11,12 +11,12 @@ import { setupGsapAnimations } from "./utils/SetupGsapAnimation";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const pdfMap = {
-  brochure: "assets/pdf/Blue-Lagoon-Brochure.pdf",
-  floorplans: "assets/pdf/Blue-Lagoon-Floor-Plans.pdf",
-  costsheet: "assets/pdf/Tower-2-Cost-Sheet.pdf",
-  paymentschedule: "assets/pdf/Payment-Schedule.pdf",
-  finishingschedule: "assets/pdf/Finishing-Schedule.pdf",
-  applicationform: "assets/pdf/Application-Form.pdf",
+  brochure: "/assets/pdf/Blue-Lagoon-Brochure.pdf",
+  floorplans: "/assets/pdf/Blue-Lagoon-Floor-Plans.pdf",
+  costsheet: "/assets/pdf/Tower-2-Cost-Sheet.pdf",
+  paymentschedule: "/assets/pdf/Payment-Schedule.pdf",
+  finishingschedule: "/assets/pdf/Finishing-Schedule.pdf",
+  applicationform: "/assets/pdf/Application-Form.pdf",
 };
 
 function Layout() {
