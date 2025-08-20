@@ -102,7 +102,7 @@ export default function Footer({ openModal }) {
           </li>
           <li className="font-manrope text-[10px] lg:flex tracking-[0.5px] lg:text-[14px]">
             All Rights Reserved <span className="inline-block mx-[5px]">|</span>
-            <a href="" className="font-manrope ml-[3px]" target="_blank">
+            <a href="https://www.gtftechnologies.com/" className="font-manrope ml-[3px]" target="_blank">
               Crafted by GTF Technologies
             </a>
           </li>

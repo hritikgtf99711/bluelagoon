@@ -168,3 +168,6 @@ max-width: 1100px; /* Custom width for xl */
 max-width: 1300px; /* Custom width for xxl */
 }
 }
+
+/* .swiper-button-prev, .swiper-button-next{position: static;} */
+.swiper-pagination{display: none;}

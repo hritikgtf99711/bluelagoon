@@ -35,7 +35,7 @@ export default function VideoCta() {
             Your perfect beachside escape is just a message away{" "}
             <span className="lg:block"></span>– our dedicated team is standing
             by to craft your <span className="lg:block"></span>
-            personalized coastal experience.
+            personalised coastal experience.
           </p>
 
           <a

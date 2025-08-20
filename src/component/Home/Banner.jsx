@@ -19,12 +19,11 @@ const Banner = () => {
           data-gsap-delay="0.6"
         >
           <span className="bg-gradient-to-t from-[#5b90ca7d]  to-white text-transparent bg-clip-text">
-            {" "}
-            Where Every Detail{" "}
+            Where Every Detail
           </span>
-          <span className="lg:block"></span>{" "}
+          <span className="lg:block"></span>
           <span className="bg-clip-text bg-gradient-to-t from-[#5b90ca7d]  to-white text-transparent ">
-            {" "}
+            
             Inspires Serenity
           </span>
         </h1>
