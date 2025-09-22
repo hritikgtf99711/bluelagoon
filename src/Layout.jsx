@@ -13,7 +13,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 const pdfMap = {
   brochure: "/assets/pdf/Blue-Lagoon-Brochure.pdf",
   floorplans: "/assets/pdf/Blue-Lagoon-Floor-Plans.pdf",
-  costsheet: "/assets/pdf/Tower-2-Cost-Sheet.pdf",
+  costsheet: "/assets/pdf/Coral-Upto-12th-FLoor.pdf",
+  // costsheet: "/assets/pdf/Tower-2-Cost-Sheet.pdf",
   paymentschedule: "/assets/pdf/Payment-Schedule.pdf",
   finishingschedule: "/assets/pdf/Finishing-Schedule.pdf",
   applicationform: "/assets/pdf/Application-Form.pdf",

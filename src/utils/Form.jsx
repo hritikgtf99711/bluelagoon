@@ -19,7 +19,7 @@ export default function Form({ isOpen, setIsOpen, closeModal,selectedPdf }) {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://bluelagoon.mv/sendMail.php", {
+      const response = await fetch("https://www.bluelagoon.mv/sendMail.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, comments, client: "bluelagoon" }),
