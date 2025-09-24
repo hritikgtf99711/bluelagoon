@@ -19,7 +19,7 @@ export default function Form({ isOpen, setIsOpen, closeModal,selectedPdf }) {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://bluelagoon.mv/sendMail.php", {
+      const response = await fetch("https://www.bluelagoon.mv/sendMail.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, comments, client: "bluelagoon" }),
@@ -58,14 +58,12 @@ export default function Form({ isOpen, setIsOpen, closeModal,selectedPdf }) {
 
   return (
     <>
-    {/* <button onClick={downloadPdf}>Donwload</button> */}
     <div className='relative form_sec overflow-hidden'>
       <div className='relative px-[30px] py-[40px] border-[4px] border-[var(--primary-color)]'>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute top-[-14px] right-[-20px] border-l-[4px] border-b-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute top-[-14px] left-[-20px] border-r-[4px] border-b-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute bottom-[-14px] left-[-20px] border-t-[4px] border-r-[4px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
         <div className='h-[35px] w-[35px] rounded-[50%] absolute border-l-[4px] border-t-[4px] bottom-[-14px] right-[-20px] bg-[var(--secondary-color)] border-[var(--primary-color)]'></div>
-        
         <form onSubmit={handleSubmit(onInfo)}>
           <div>
 
@@ -115,12 +113,8 @@ export default function Form({ isOpen, setIsOpen, closeModal,selectedPdf }) {
               placeholder='Contact No.'
               {...register('phone', {
                 required: 'Contact number is required',
-                pattern: {
-                  value: /^[\+]?[(]?[\d\s\-\(\)]{10,}$/,
-                  message: 'Please enter a valid phone number (minimum 10 digits)',
-                },
-                minLength: {
-                  value: 10,
+                maxLength: {
+                  value: 20,
                   message: 'Phone number must be at least 10 digits'
                 }
               })}
@@ -180,7 +174,6 @@ export default function Form({ isOpen, setIsOpen, closeModal,selectedPdf }) {
           </button>
         </form>
       </div>
-      
     </div>
     </>
   );

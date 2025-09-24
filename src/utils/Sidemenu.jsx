@@ -70,7 +70,7 @@ export default function Sidemenu({ onClick, openSideMenu, setopenSideMenu }) {
               <img
                 className="w-[20px]"
                 src="assets/icons/icon_video_color.svg"
-                alt=""
+                alt="Instagram"
               />
             </a>
           </li>
@@ -82,7 +82,7 @@ export default function Sidemenu({ onClick, openSideMenu, setopenSideMenu }) {
               <img
                 className="w-[20px]"
                 src="assets/icons/icon_facebook_color.svg"
-                alt=""
+                alt="facebook"
               />
             </a>
           </li>

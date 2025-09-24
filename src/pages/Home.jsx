@@ -40,6 +40,27 @@ const Home = () => {
               <meta property="og:url" content="https://www.bluelagoon.mv/" />
               <meta property="og:site_name" content="Blue Lagoon Maldives" />
               <meta property="og:image" content="https://www.bluelagoon.mv/assets/images/home/gallery/gallery_3.webp" />
+            <script type="application/ld+json">
+              {`
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Blue Lagoon",
+                "url": "https://www.bluelagoon.mv/",
+                "logo": "https://www.bluelagoon.mv/assets/images/logo.svg",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "960 953 2525",
+                  "contactType": "technical support",
+                  "contactOption": "TollFree",
+                  "areaServed": "MV",
+                  "availableLanguage": "en"
+                },
+                "sameAs": [
+                  "https://www.instagram.com/vcilmauritius?utm_source=qr&igsh=OThnNnZ2dHgzdXd4",
+                  "https://www.facebook.com/profile.php?id=61579439157253&mibextid=ZbWKwL"
+                ]
+              `}
+            </script>
               </Helmet>
             <Suspense fallback={<h1>Loading Banner</h1>}>
             <Banner />

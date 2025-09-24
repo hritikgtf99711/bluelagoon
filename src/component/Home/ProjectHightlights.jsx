@@ -67,11 +67,11 @@
                         <img 
                         ref={rightSectionRef}
                             src="/assets/images/home/project_highlights.png" 
+                            alt="Blue Lagoon Maldives"
                             className="w-[100%] object-cover" 
                             data-gsap="clip-polygon" 
                             data-gsap-duration="1" 
                             data-gsap-delay="0.6" 
-                            alt="" 
                         />
                     </div>
                     
@@ -207,7 +207,7 @@
                     <img 
                         src="/assets/icons/coconut_blob.png" 
                         className="absolute w-[180px] right-[0] lg:block hidden bottom-0 z-[-1] right-0" 
-                        alt="" 
+                        alt="Coconut Tree" 
                     />
                 </div>
             </section>

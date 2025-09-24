@@ -13,7 +13,7 @@ const Typology = () => {
         />
         <div data-gsap="fade-up" data-gsap-duration="1" data-gsap-delay="0.6">
           <Headings
-            classNames=" text-[var(--secondary-color)] "
+            classNames="text-[var(--secondary-color)] "
             headings={"typology"}
           />
         </div>

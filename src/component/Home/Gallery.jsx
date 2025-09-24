@@ -1,43 +1,41 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Headings from "../../utils/Headings";
 import ArtisticImpression from "../../utils/ArtisticImpression";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Lightbox from "yet-another-react-lightbox";
-import Captions from "yet-another-react-lightbox/plugins/captions";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "yet-another-react-lightbox/styles.css";
-import "yet-another-react-lightbox/plugins/captions.css"; // For captions plugin
-
+import "yet-another-react-lightbox/plugins/captions.css"; 
 export default function Gallery() {
-  // State to manage lightbox
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
-  // Array of images for the lightbox
   const images = [
     {
       src: "assets/images/home/gallery/gallery_1.webp",
+      alt:"blue lagoon ultra luxury maldives"
     },
     {
       src: "assets/images/home/gallery/gallery_2.webp",
+     alt:"blue lagoon ultra luxury residences maldives"
     },
     {
     src: "assets/images/home/gallery/gallery_3.webp",
+    alt:"blue lagoon ultra luxury residences"
     },
     {
       src: "assets/images/home/gallery/gallery_4.webp",
+      alt:"blue lagoon maldives"
     },
     {
       src: "assets/images/home/gallery/gallery_5.webp",
+      Salt:"blue lagoon"
     },
   ];
 
-  // Handle image click to open lightbox
   const handleImageClick = (index) => {
     setPhotoIndex(index);
     setIsOpen(true);
@@ -110,7 +108,7 @@ export default function Gallery() {
                     data-gsap="clip-polygon"
                     data-gsap-duration="1"
                     data-gsap-delay="0.6"
-                    alt={image.title}
+                    alt={image.alt}
                     onClick={() => handleImageClick(index)} // Open lightbox on click
                     style={{ cursor: "pointer" }}
                   />

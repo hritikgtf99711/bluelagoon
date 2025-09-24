@@ -4,7 +4,7 @@ const CtaComponent=()=>{
         <div className="container  h-[100%]  lg:bg-[transparent] bg-[#000000a3] lg:py-0 py-[80px]">
             <div className="lg:grid-cols-12 grid-cols-1 grid h-[100%]">
                 <div className="col-span-6 m-auto">
-        <div className="content text-center">
+                 <div className="content text-center">
             <h3 data-gsap="fade-down" data-gsap-duration="1" data-gsap-delay="0.6" className="lg:bg-gradient-to-t mb-[8px] font-[600] text-[20px] lg:text-[32px] uppercase from-[#1A4A5B]  to-[#412C24] text-[#fff] lg:text-transparent lg:bg-clip-text">
                 One of the Largest
             </h3>

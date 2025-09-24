@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import ZoomOut from "../../utils/ZoomOut";
 import ArtisticImpression from "../../utils/ArtisticImpression";
 const Banner = () => {
   return (
@@ -39,7 +37,7 @@ const Banner = () => {
               <img
                 className="w-[20px]"
                 src="./assets/icons/icon_video.svg"
-                alt=""
+                alt="Instagram"
               />
             </a>
           </li>
@@ -48,7 +46,7 @@ const Banner = () => {
               <img
                 className="w-[20px]"
                 src="./assets/icons/icon_facebook.svg"
-                alt=""
+                alt="facebook"
               />
             </a>
           </li>
