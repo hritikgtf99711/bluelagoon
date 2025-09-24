@@ -142,19 +142,20 @@ export default function About() {
               }
             />
             <div className="lg:px-24 content_sec lg:opacity-0 mt-[60px]">
-              <p   data-gsap="fade-up"  className="font-manrope leading-loose font-light">
-                Welcome to Blue Lagoon by VCL Constructions — a place where the
-                serene beauty of the ocean meets the comforts of modern living.
-                Inspired by the endless horizon and the purity of nature, Blue
-                Lagoon offers a collection of thoughtfully designed residences and
-                dynamic commercial spaces, each curated to bring you closer to the
-                peaceful essence of the sea.
+              <p data-gsap="fade-up" className="font-manrope leading-loose font-light">
+                Welcome to Blue Lagoon by VCL Constructions — a place where
+                the serene beauty of the ocean meets the comforts of modern living. Inspired by
+                the endless horizon and the purity of nature, Blue Lagoon offers a collection
+                of thoughtfully designed residences and dynamic commercial spaces, each curated
+                to bring you closer to the peaceful essence of the sea.
               </p>
-              <p   data-gsap="fade-up"  className="font-manrope leading-loose font-light mt-6">
-                Every residence at Blue Lagoon provides an uninterrupted view of the
-                ocean, allowing you to immerse yourself in tranquility and natural
-                beauty with every glance. The design integrates nature seamlessly,
-                with open spaces that promote a sense of freedom and serenity.
+              <p data-gsap="fade-up" className="font-manrope leading-loose font-light mt-6">
+                Every residence at Blue Lagoon provides an
+                uninterrupted view of the ocean, allowing you to immerse yourself in
+                tranquility and natural beauty with every glance. The design integrates nature
+                seamlessly, with open spaces that promote a sense of freedom and serenity. The development comprises two elegant towers —
+                Coral and Pearl — each crafted to reflect the timeless charm of the sea,
+                offering residents an address that is as distinctive as it is luxurious.
               </p>
             </div>
             <div className="text-center mt-12" >
